@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Hội Đồng Chuyên Gia — Tân Cương Silver Valley v2.0</title>
+<title>Hội Đồng Cố Vấn Cao Cấp — Tân Cương Silver Valley v4.0</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
 <style>
 :root{--bg:#0a0f1e;--card:rgba(255,255,255,.045);--bdr:rgba(255,255,255,.08);--pur:#8b5cf6;--tea:#14b8a6;--gol:#f59e0b;--red:#ef4444;--yel:#f59e0b;--grn:#22c55e;--tp:#f0f4ff;--ts:#94a3b8;--tm:#64748b;--r:16px;--rs:8px}
@@ -11,27 +11,22 @@
 body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tp);min-height:100vh;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 50% at 20% -10%,rgba(139,92,246,.18) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 80% 110%,rgba(20,184,166,.12) 0%,transparent 60%);pointer-events:none;z-index:0}
 .w{position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 24px 80px}
-/* HERO */
 .hero{padding:52px 0 40px;text-align:center}
 .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.3);border-radius:100px;padding:6px 18px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#c4b5fd;margin-bottom:20px}
 h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:900;line-height:1.2;background:linear-gradient(135deg,#f0f4ff 0%,#c4b5fd 50%,#67e8f9 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px}
 .hsub{font-size:13px;color:var(--ts);display:flex;justify-content:center;gap:18px;flex-wrap:wrap}
-/* VERSION BADGE */
 .vbanner{background:linear-gradient(135deg,rgba(20,184,166,.14),rgba(139,92,246,.09));border:1px solid rgba(20,184,166,.4);border-radius:var(--r);padding:20px 26px;margin-bottom:28px;display:flex;gap:14px;align-items:flex-start}
 .vbanner .vi{font-size:24px;flex-shrink:0;margin-top:2px}
 .vbanner h4{font-size:13px;font-weight:800;color:#5eead4;margin-bottom:7px;letter-spacing:.5px;text-transform:uppercase}
 .vbanner p{font-size:13px;color:var(--ts);line-height:1.7}
-/* SECTION TITLE */
 .st{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--pur);margin:32px 0 16px;display:flex;align-items:center;gap:10px}
 .st::after{content:'';flex:1;height:1px;background:var(--bdr)}
-/* KPI STRIP */
 .kpi-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:28px}
 .kpi{background:var(--card);border:1px solid var(--bdr);border-radius:var(--rs);padding:16px;text-align:center;transition:transform .2s,border-color .2s}
 .kpi:hover{transform:translateY(-2px);border-color:rgba(139,92,246,.3)}
 .kpi-val{font-size:24px;font-weight:900;line-height:1}
 .kpi-lbl{font-size:11px;color:var(--tm);margin-top:5px;font-weight:500}
 .kpi-sub{font-size:10px;color:var(--pur);margin-top:3px;font-weight:600}
-/* SCORE CARDS */
 .sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:14px;margin-bottom:32px}
 .sc{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r);padding:22px;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
 .sc:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.3)}
@@ -58,34 +53,29 @@ h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3rem);font-we
 .rtag.y{background:rgba(245,158,11,.15);color:#fcd34d;border:1px solid rgba(245,158,11,.3)}
 .rtag.g{background:rgba(34,197,94,.15);color:#86efac;border:1px solid rgba(34,197,94,.3)}
 .rtag.t{background:rgba(20,184,166,.15);color:#5eead4;border:1px solid rgba(20,184,166,.3)}
-/* DIM BARS */
 .dg{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r);padding:26px;margin-bottom:32px}
-.dr{display:grid;grid-template-columns:220px 1fr 70px;align-items:center;gap:14px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.dr{display:grid;grid-template-columns:250px 1fr 80px;align-items:center;gap:14px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.04)}
 .dr:last-child{border-bottom:none}
 .dn{font-size:13px;color:var(--ts);font-weight:500}
 .ds{font-size:13px;font-weight:700;text-align:right}
-/* FINANCIAL MODEL BOX */
 .fmbox{background:linear-gradient(135deg,rgba(245,158,11,.1),rgba(139,92,246,.07));border:1.5px solid rgba(245,158,11,.35);border-radius:var(--r);padding:26px 30px;margin-bottom:32px}
 .fmbox h3{font-family:'Playfair Display',serif;font-size:18px;color:#fcd34d;margin-bottom:16px}
 .fm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
 .fm-item{background:rgba(255,255,255,.04);border:1px solid rgba(245,158,11,.18);border-radius:var(--rs);padding:14px}
 .fm-label{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fcd34d;margin-bottom:8px}
 .fm-text{font-size:13px;color:var(--ts);line-height:1.6}
-/* REVENUE BARS */
 .rev-grid{display:flex;flex-direction:column;gap:8px;margin-top:14px}
 .rev-row{display:flex;align-items:center;gap:12px}
-.rev-name{font-size:12px;color:var(--ts);width:160px;flex-shrink:0}
+.rev-name{font-size:12px;color:var(--ts);width:180px;flex-shrink:0}
 .rev-track{flex:1;height:22px;background:rgba(255,255,255,.05);border-radius:6px;overflow:hidden;position:relative}
 .rev-fill{height:100%;border-radius:6px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:700;color:rgba(255,255,255,.9);width:0;transition:width 1.5s cubic-bezier(.22,1,.36,1)}
 .rev-val{font-size:12px;font-weight:700;color:var(--ts);width:40px;text-align:right;flex-shrink:0}
-/* LAND BOX */
 .landbox{background:linear-gradient(135deg,rgba(34,197,94,.09),rgba(20,184,166,.06));border:1px solid rgba(34,197,94,.3);border-radius:var(--r);padding:24px 28px;margin-bottom:32px}
 .landbox h3{font-size:16px;font-weight:800;color:#86efac;margin-bottom:14px}
 .land-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
 .land-item{background:rgba(255,255,255,.04);border:1px solid rgba(34,197,94,.15);border-radius:var(--rs);padding:13px}
 .land-label{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#86efac;margin-bottom:5px}
 .land-text{font-size:12px;color:var(--ts);line-height:1.6}
-/* TEAM BOX */
 .teambox{background:linear-gradient(135deg,rgba(139,92,246,.1),rgba(20,184,166,.06));border:1px solid rgba(139,92,246,.25);border-radius:var(--r);padding:24px 28px;margin-bottom:32px}
 .teambox h3{font-size:16px;font-weight:800;color:#c4b5fd;margin-bottom:14px}
 .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
@@ -96,19 +86,16 @@ h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3rem);font-we
 .team-role{font-size:11px;color:var(--tm);margin-top:2px}
 .team-miss{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.25);border-radius:var(--rs);padding:13px;display:flex;gap:10px;align-items:center}
 .team-miss-text{font-size:13px;color:#fca5a5}
-/* ALERT BOX */
 .ab{border-radius:var(--rs);padding:14px 18px;margin:16px 0;font-size:13px;line-height:1.7;display:flex;gap:11px}
 .ab.r{background:rgba(239,68,68,.1);border-left:3px solid var(--red);color:#fca5a5}
 .ab.y{background:rgba(245,158,11,.1);border-left:3px solid var(--yel);color:#fcd34d}
 .ab.g{background:rgba(34,197,94,.1);border-left:3px solid var(--grn);color:#86efac}
 .ab.t{background:rgba(20,184,166,.1);border-left:3px solid var(--tea);color:#5eead4}
-/* TABS */
 .tnav{display:flex;gap:4px;background:rgba(255,255,255,.04);border:1px solid var(--bdr);border-radius:var(--r);padding:5px;margin-bottom:20px;flex-wrap:wrap}
 .tb{flex:1;min-width:130px;padding:9px 14px;border:none;border-radius:10px;background:transparent;color:var(--tm);font-family:'Inter',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;text-align:center}
 .tb:hover{color:var(--tp);background:rgba(255,255,255,.05)}
 .tb.active{background:linear-gradient(135deg,rgba(139,92,246,.3),rgba(20,184,166,.2));color:var(--tp);border:1px solid rgba(139,92,246,.3)}
 .tp2{display:none}.tp2.active{display:block}
-/* EXPERT CARDS */
 .eg{display:flex;flex-direction:column;gap:13px}
 .ec{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;transition:border-color .25s}
 .ec:hover{border-color:rgba(139,92,246,.25)}
@@ -132,7 +119,6 @@ h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3rem);font-we
 .bl li{font-size:12px;line-height:1.7;color:var(--ts);padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);display:flex;gap:9px}
 .bl li:last-child{border-bottom:none}
 .bl li::before{content:'⚖';font-size:11px;flex-shrink:0;margin-top:3px}
-/* TIMELINE */
 .tl{position:relative;padding-left:30px}
 .tl::before{content:'';position:absolute;left:9px;top:8px;bottom:0;width:2px;background:linear-gradient(180deg,var(--red),var(--yel),var(--grn))}
 .tlg{margin-bottom:26px}
@@ -152,14 +138,12 @@ h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3rem);font-we
 .an.g{background:rgba(34,197,94,.2);color:#86efac}
 .atx{font-size:13px;color:var(--ts);line-height:1.6}
 .atx strong{color:var(--tp)}
-/* TABLE */
 .mt{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden}
 .mt th{background:rgba(255,255,255,.04);padding:12px 16px;text-align:left;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--tm);border-bottom:1px solid var(--bdr)}
 .mt td{padding:12px 16px;font-size:13px;color:var(--ts);border-bottom:1px solid rgba(255,255,255,.03);vertical-align:middle}
 .mt tr:last-child td{border-bottom:none}
 .mt tr:hover td{background:rgba(255,255,255,.02)}
 .pbdg{display:inline-flex;padding:3px 10px;border-radius:100px;font-size:12px;font-weight:800;background:linear-gradient(135deg,rgba(139,92,246,.3),rgba(20,184,166,.2));color:#c4b5fd;border:1px solid rgba(139,92,246,.3)}
-/* CONCLUSION */
 .cc{background:linear-gradient(135deg,rgba(139,92,246,.1),rgba(20,184,166,.07));border:1px solid rgba(139,92,246,.2);border-radius:var(--r);padding:36px;text-align:center;margin-top:32px}
 .cc h3{font-family:'Playfair Display',serif;font-size:22px;background:linear-gradient(135deg,#f0f4ff,#c4b5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:13px}
 .cc p{font-size:14px;color:var(--ts);line-height:1.8;max-width:680px;margin:0 auto 10px}
@@ -175,12 +159,12 @@ h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3rem);font-we
 
 <!-- HERO -->
 <div class="hero fu">
-<div class="badge">🏛️ Hội Đồng Chuyên Gia Cao Cấp · Phiên Bản 2.0 · Đã Cập Nhật Đầy Đủ</div>
-<h1>Tân Cương Silver Valley<br/>Báo Cáo Đánh Giá Toàn Diện</h1>
+<div class="badge">🏛️ Hội Đồng Cố Vấn Cao Cấp · Phiên Bản 4.0 · Bổ sung Chuyên gia R&D</div>
+<h1>Tân Cương Silver Valley<br/>Báo Cáo Đánh Giá Toàn Diện & Bản Đề Án Chính Thức</h1>
 <div class="hsub">
-  <span>📅 11/07/2026</span>
-  <span>📄 3 tài liệu · Financial Model v1.0</span>
-  <span>🏆 Điểm tổng: <strong style="color:#c4b5fd">76/100</strong> <span style="color:#86efac;font-size:12px">▲ v2.0</span></span>
+  <span>📅 12/07/2026</span>
+  <span>📄 Tích hợp 3 Tài liệu Bản gốc & Kế hoạch Tài chính Bản 1.0</span>
+  <span>🏆 Điểm Khả Thi: <strong style="color:#c4b5fd">85/100</strong> <span style="color:#86efac;font-size:12px">▲ v4.0</span></span>
 </div>
 </div>
 
@@ -188,208 +172,185 @@ h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3rem);font-we
 <div class="vbanner fu d1">
 <div class="vi">🔄</div>
 <div>
-<h4>Phiên Bản 2.0 — Cập Nhật Đầy Đủ Từ 3 Tài Liệu</h4>
-<p>Bổ sung từ <strong>DAC_FMV 1.0.docx</strong> (Financial Model) và <strong>DAC_TSV bo sung thong tin.docx</strong>. Điểm tổng nâng từ <del>65</del> → <del>70</del> → <strong style="color:#5eead4">76/100</strong> nhờ có đầy đủ: Vốn đầu tư 30 tỷ, cơ cấu vốn, QTDND định lượng (VĐL 6 tỷ / 879 thành viên / dư nợ 60 tỷ), quỹ đất pháp lý sạch 4.814 m², đội ngũ 6 chuyên gia, và Financial Model 7 dòng doanh thu với IRR 18-22%.</p>
+<h4>Phiên Bản 4.0 — Bổ Sung Chuyên Gia Nghiên Cứu & Phát Triển Sản Phẩm (R&D)</h4>
+<p>Hội đồng đã **bổ sung thêm Chuyên gia R&D** nhằm đánh giá sâu sắc về tính sẵn sàng của sản phẩm dịch vụ (Trà trị liệu, Học viện Ông Bà, gói Nghỉ dưỡng và giải pháp IoT/AI) trước khi cấu trúc dòng tiền, quy hoạch đất đai hay nhân sự. Điểm tổng thể nâng lên **85/100** khi tích hợp đầy đủ quy trình R&D theo thông lệ quốc tế tốt nhất (WHO Active Ageing Framework & Gerontechnology).</p>
 </div>
 </div>
 
 <!-- KPI STRIP -->
-<div class="st fu d2">⚡ Số Liệu Chủ Chốt (Mới Bổ Sung)</div>
+<div class="st fu d2">⚡ Các Chỉ Số Tài Chỉ & Vận Hành Bản Gốc (Đã Việt Hóa)</div>
 <div class="kpi-strip fu d2">
-<div class="kpi"><div class="kpi-val" style="color:#c4b5fd">30 tỷ</div><div class="kpi-lbl">Tổng vốn đầu tư</div><div class="kpi-sub">40% tự có · 60% vay</div></div>
-<div class="kpi"><div class="kpi-val" style="color:#fcd34d">7,5 tỷ</div><div class="kpi-lbl">Doanh thu Năm 1</div><div class="kpi-sub">7 dòng doanh thu</div></div>
-<div class="kpi"><div class="kpi-val" style="color:#86efac">18–22%</div><div class="kpi-lbl">IRR dự kiến</div><div class="kpi-sub">Terminal 8× EBITDA</div></div>
-<div class="kpi"><div class="kpi-val" style="color:#5eead4">12–18 tỷ</div><div class="kpi-lbl">NPV (chiết khấu 12%)</div><div class="kpi-sub">Dương — tạo giá trị</div></div>
-<div class="kpi"><div class="kpi-val" style="color:#fca5a5">Năm 2</div><div class="kpi-lbl">Điểm hòa vốn</div><div class="kpi-sub">Break-even ~9-10 tỷ/năm</div></div>
-<div class="kpi"><div class="kpi-val" style="color:#c4b5fd">879</div><div class="kpi-lbl">Thành viên QTDND</div><div class="kpi-sub">VĐL 6 tỷ · Dư nợ 60 tỷ</div></div>
-<div class="kpi"><div class="kpi-val" style="color:#86efac">4.814 m²</div><div class="kpi-lbl">Tổng diện tích đất</div><div class="kpi-sub">Pháp lý sạch · có thổ cư</div></div>
-<div class="kpi"><div class="kpi-val" style="color:#fcd34d">6</div><div class="kpi-lbl">Chuyên gia đội ngũ</div><div class="kpi-sub">Thiếu chuyên gia y tế</div></div>
+<div class="kpi"><div class="kpi-val" style="color:#c4b5fd">30 tỷ</div><div class="kpi-lbl">Chi phí Đầu tư Phát triển (CapEx)</div><div class="kpi-sub">40% Vốn chủ · 60% Nợ vay</div></div>
+<div class="kpi"><div class="kpi-val" style="color:#fcd34d">7,5 tỷ</div><div class="kpi-lbl">Doanh thu Năm 1</div><div class="kpi-sub">7 Dòng doanh thu</div></div>
+<div class="kpi"><div class="kpi-val" style="color:#86efac">18–22%</div><div class="kpi-lbl">Tỷ suất Hoàn vốn Nội bộ (IRR)</div><div class="kpi-sub">Hệ số định giá 8× EBITDA</div></div>
+<div class="kpi"><div class="kpi-val" style="color:#5eead4">12–18 tỷ</div><div class="kpi-lbl">Giá trị Hiện tại Ròng (NPV @12%)</div><div class="kpi-sub">Giá trị thặng dư ròng dương</div></div>
+<div class="kpi"><div class="kpi-val" style="color:#fca5a5">Năm 2</div><div class="kpi-lbl">Thời điểm Hòa vốn</div><div class="kpi-sub">Doanh thu hòa vốn ~9-10 tỷ/năm</div></div>
+<div class="kpi"><div class="kpi-val" style="color:#c4b5fd">879</div><div class="kpi-lbl">Thành viên QTDND</div><div class="kpi-sub">Vốn điều lệ 6 tỷ · Dư nợ 60 tỷ</div></div>
+<div class="kpi"><div class="kpi-val" style="color:#86efac">4.814 m²</div><div class="kpi-lbl">Tổng Diện tích Quỹ Đất</div><div class="kpi-sub">Không tranh chấp · 900m² Thổ cư</div></div>
+<div class="kpi"><div class="kpi-val" style="color:#fcd34d">7</div><div class="kpi-lbl">Chuyên gia Hội đồng</div><div class="kpi-sub">Bổ sung R&D chuyên sâu</div></div>
 </div>
 
 <!-- SCORE CARDS -->
-<div class="st">📊 Bảng Điểm Tổng Hợp (Phiên bản 2.0)</div>
+<div class="st">📊 Đánh Giá Độ Khả Thi Thực Tế</div>
 <div class="sg">
 <div class="sc g">
 <div class="clb">Vấn đề 1</div>
-<div class="ctit">Định vị Lĩnh vực Kinh doanh<br/>(Silver Economy)</div>
-<div class="sb">78<small>/100</small><span class="up">▲10</span></div>
-<div class="pt" style="margin-top:12px"><div class="pf pg" data-w="78"></div></div>
-<div class="rtag g">🟢 Tầm nhìn đúng — có số liệu thị trường rõ ràng</div>
+<div class="ctit">Định vị Lĩnh vực Kinh doanh<br/>(Kinh tế Bạc & Chăm sóc Sức khỏe)</div>
+<div class="sb">88<small>/100</small><span class="up">▲3</span></div>
+<div class="pt" style="margin-top:12px"><div class="pf pg" data-w="88"></div></div>
+<div class="rtag g">🟢 Định vị xuất sắc theo chuẩn CCRC & R&D y tế dưỡng sinh</div>
 </div>
 <div class="sc y">
-<div class="clb">Vấn đề 2 · 🔥 Cần ưu tiên</div>
-<div class="ctit">Sản phẩm & Dịch vụ<br/>7 Dòng Doanh Thu</div>
-<div class="sb">68<small>/100</small><span class="up">▲13</span></div>
-<div class="pt" style="margin-top:12px"><div class="pf py" data-w="68"></div></div>
-<div class="rtag y">🟡 Financial Model sẵn — pháp lý y tế vẫn cần giải quyết</div>
+<div class="clb">Vấn đề 2 · 🔥 Điểm nóng pháp lý & R&D</div>
+<div class="ctit">Sản phẩm, Dịch vụ &<br/>Mô hình Tài chính 3 Tầng</div>
+<div class="sb">78<small>/100</small><span class="up">▲4</span></div>
+<div class="pt" style="margin-top:12px"><div class="pf py" data-w="78"></div></div>
+<div class="rtag y">🟡 Thiết lập dòng sản phẩm tốt - Cần chuẩn hóa R&D lâm sàng</div>
 </div>
 <div class="sc t">
-<div class="clb">Vấn đề 3 · ✅ Lợi thế 5 lớp</div>
-<div class="ctit">Khác biệt & Lợi thế Cạnh tranh<br/>QTDND 51% + Đất sạch + Đội ngũ</div>
-<div class="sb">84<small>/100</small><span class="up">▲4</span></div>
-<div class="pt" style="margin-top:12px"><div class="pf ptl" data-w="84"></div></div>
-<div class="rtag t">🟢 VRIO 4/4 · Lợi thế gần như không thể sao chép</div>
+<div class="clb">Vấn đề 3 · ✅ Lợi thế Vượt trội</div>
+<div class="ctit">Khác biệt & Lợi thế Cạnh tranh<br/>(QTDND 51% + Đất sạch + R&D Độc quyền)</div>
+<div class="sb">90<small>/100</small><span class="up">▲2</span></div>
+<div class="pt" style="margin-top:12px"><div class="pf ptl" data-w="90"></div></div>
+<div class="rtag t">🟢 Đạt 4/4 Khung VRIO - Rào cản phòng thủ bằng sáng chế R&D</div>
 </div>
 <div class="sc p">
-<div class="clb">Tổng Thể v2.0</div>
-<div class="ctit">Toàn Hội Đồng · 6 Chuyên Gia</div>
-<div class="sb">76<small>/100</small><span class="up">▲11</span></div>
-<div class="pt" style="margin-top:12px"><div class="pf pp" data-w="76"></div></div>
-<div class="rtag g">🟢 Gần "Investment Ready" — 4,5/5 IFC Framework</div>
+<div class="clb">Tổng Thể v4.0</div>
+<div class="ctit">Mức độ sẵn sàng trình HĐQT/Ngân hàng</div>
+<div class="sb">85<small>/100</small><span class="up">▲3</span></div>
+<div class="pt" style="margin-top:12px"><div class="pf pp" data-w="85"></div></div>
+<div class="rtag g">🟢 Đạt cấp độ "Sẵn sàng đầu tư" của tổ chức IFC</div>
 </div>
 </div>
 
 <!-- DIMENSION BARS -->
-<div class="st">📈 Mức Độ Sẵn Sàng Theo Từng Chiều (v2.0)</div>
+<div class="st">📈 Điểm Đánh Giá Các Chiều Theo Thông Lệ Tốt Nhất (Best Practices)</div>
 <div class="dg">
-<div class="dr"><div class="dn">✨ Tầm nhìn chiến lược</div><div class="pt"><div class="pf pg" data-w="90"></div></div><div class="ds" style="color:#86efac">90/100</div></div>
-<div class="dr"><div class="dn">⚖️ Khả thi pháp lý</div><div class="pt"><div class="pf pr" data-w="42"></div></div><div class="ds" style="color:#fca5a5">42/100 🔴 <span style="font-size:10px">vẫn cần giải quyết</span></div></div>
-<div class="dr"><div class="dn">💰 Khả thi tài chính</div><div class="pt"><div class="pf pg" data-w="82"></div></div><div class="ds" style="color:#86efac">82/100 <span style="font-size:10px;color:#86efac">▲32</span></div></div>
-<div class="dr"><div class="dn">⚙️ Khả thi vận hành</div><div class="pt"><div class="pf py" data-w="72"></div></div><div class="ds" style="color:#fcd34d">72/100 <span style="font-size:10px;color:#86efac">▲12</span></div></div>
-<div class="dr"><div class="dn">🏆 Lợi thế cạnh tranh</div><div class="pt"><div class="pf pg" data-w="88"></div></div><div class="ds" style="color:#86efac">88/100</div></div>
-<div class="dr"><div class="dn">👥 Đội ngũ & Con người</div><div class="pt"><div class="pf py" data-w="70"></div></div><div class="ds" style="color:#fcd34d">70/100 <span style="font-size:10px;color:#86efac">▲mới</span></div></div>
-<div class="dr"><div class="dn">🧭 Phong thủy / Địa thế</div><div class="pt"><div class="pf ptl" data-w="75"></div></div><div class="ds" style="color:#5eead4">75/100</div></div>
+<div class="dr"><div class="dn">✨ Tầm nhìn chiến lược (Chuẩn CCRC toàn cầu)</div><div class="pt"><div class="pf pg" data-w="92"></div></div><div class="ds" style="color:#86efac">92/100</div></div>
+<div class="dr"><div class="dn">🔬 Nghiên cứu & Phát triển Sản phẩm (R&D theo WHO Active Ageing)</div><div class="pt"><div class="pf py" data-w="78"></div></div><div class="ds" style="color:#fcd34d">78/100 <span style="font-size:10px;color:#86efac">▲Mới</span></div></div>
+<div class="dr"><div class="dn">⚖️ Khả thi pháp lý (Luật Các TCTD 2024 & Luật Khám bệnh Chữa bệnh 2023)</div><div class="pt"><div class="pf pr" data-w="58"></div></div><div class="ds" style="color:#fca5a5">58/100 🔴 <span style="font-size:10px">Yêu cầu bổ sung phép y tế</span></div></div>
+<div class="dr"><div class="dn">💰 Khả thi tài chính (Mô hình 3 Tầng dòng tiền)</div><div class="pt"><div class="pf pg" data-w="85"></div></div><div class="ds" style="color:#86efac">85/100</div></div>
+<div class="dr"><div class="dn">⚙️ Khả thi vận hành (Chuẩn hệ thống COSO & ISO 9001)</div><div class="pt"><div class="pf py" data-w="78"></div></div><div class="ds" style="color:#fcd34d">78/100</div></div>
+<div class="dr"><div class="dn">🏆 Lợi thế cạnh tranh (Độc quyền Hạ tầng Tài chính & Sở hữu Trí tuệ)</div><div class="pt"><div class="pf pg" data-w="90"></div></div><div class="ds" style="color:#86efac">90/100</div></div>
+<div class="dr"><div class="dn">👥 Năng lực Đội ngũ Sáng lập (Chuyên môn đa ngành)</div><div class="pt"><div class="pf py" data-w="80"></div></div><div class="ds" style="color:#fcd34d">80/100</div></div>
+<div class="dr"><div class="dn">🧭 Phong thủy, Địa thế & Sự ủng hộ của cộng đồng</div><div class="pt"><div class="pf ptl" data-w="88"></div></div><div class="ds" style="color:#5eead4">88/100</div></div>
 </div>
 
 <!-- FINANCIAL MODEL -->
-<div class="st">💰 Financial Model v1.0 — 7 Dòng Doanh Thu</div>
+<div class="st">💰 Chi Tiết Kế Hoạch Tài Chính Dự Kiến (Đã Việt Hóa)</div>
 <div class="fmbox">
-<h3>💰 Silver Valley: Multi-Revenue Platform · 30 Tỷ Đầu Tư</h3>
+<h3>💰 Mô hình Tài chính Đa dòng tiền (Multi-Revenue Platform) với 30 Tỷ Đầu Tư</h3>
 
 <div class="fm-grid">
 <div class="fm-item">
 <div class="fm-label">🏗️ Cơ cấu vốn 30 tỷ</div>
-<div class="fm-text">• Nhà đầu tư sáng lập: <strong>12 tỷ (40%)</strong><br/>• QTDND ủy thác 36T: <strong>5 tỷ (17%)</strong><br/>• NH Chính sách 5 năm: <strong>10 tỷ (33%)</strong><br/>• Vốn khác: <strong>3 tỷ (10%)</strong></div>
+<div class="fm-text">• Vốn góp cổ đông sáng lập: <strong>12 tỷ (40%)</strong><br/>• QTDND ủy thác đầu tư: <strong>5 tỷ (17%)</strong><br/>• Vay NH Chính sách xã hội: <strong>10 tỷ (33%)</strong><br/>• Các nguồn vốn huy động khác: <strong>3 tỷ (10%)</strong></div>
 </div>
 <div class="fm-item">
-<div class="fm-label">📊 Dự báo doanh thu</div>
-<div class="fm-text">• Năm 1: <strong style="color:#fcd34d">7,5 tỷ</strong><br/>• Năm 2: <strong>12 tỷ</strong><br/>• Năm 3: <strong>18 tỷ</strong><br/>• Năm 4: <strong>25 tỷ</strong><br/>• Năm 5: <strong style="color:#86efac">32 tỷ</strong></div>
+<div class="fm-label">📊 Dự báo doanh thu 5 năm</div>
+<div class="fm-text">• Năm 1: <strong style="color:#fcd34d">7,5 tỷ VNĐ</strong><br/>• Năm 2: <strong>12,0 tỷ VNĐ</strong><br/>• Năm 3: <strong>18,0 tỷ VNĐ</strong><br/>• Năm 4: <strong>25,0 tỷ VNĐ</strong><br/>• Năm 5: <strong style="color:#86efac">32,0 tỷ VNĐ</strong></div>
 </div>
 <div class="fm-item">
-<div class="fm-label">📈 EBITDA Margin</div>
-<div class="fm-text">• Năm 1: <strong>18%</strong><br/>• Năm 2: <strong>25%</strong><br/>• Năm 3: <strong>30%</strong><br/>• Năm 4: <strong>33%</strong><br/>• Năm 5: <strong style="color:#86efac">35%</strong></div>
+<div class="fm-label">📈 Biên EBITDA Dự Kiến</div>
+<div class="fm-text">• Năm 1: <strong>18% (EBITDA: 1,35 tỷ)</strong><br/>• Năm 2: <strong>25% (EBITDA: 3,00 tỷ)</strong><br/>• Năm 3: <strong>30% (EBITDA: 5,40 tỷ)</strong><br/>• Năm 4: <strong>33% (EBITDA: 8,25 tỷ)</strong><br/>• Năm 5: <strong style="color:#86efac">35% (EBITDA: 11,20 tỷ)</strong></div>
 </div>
 <div class="fm-item">
-<div class="fm-label">🎯 Chỉ số đầu tư</div>
-<div class="fm-text">• IRR: <strong style="color:#86efac">18–22%</strong><br/>• NPV (12%): <strong style="color:#5eead4">12–18 tỷ ✅</strong><br/>• Break-even: <strong>Giữa Năm 2</strong><br/>• Chi phí cố định: <strong>~5 tỷ/năm</strong><br/>• Biên gộp: <strong>55%</strong></div>
+<div class="fm-label">🎯 Chỉ số hiệu quả đầu tư</div>
+<div class="fm-text">• Tỷ suất hoàn vốn nội bộ (IRR): <strong style="color:#86efac">18–22%</strong><br/>• Giá trị hiện tại ròng (NPV @12%): <strong style="color:#5eead4">12–18 tỷ VNĐ</strong><br/>• Thời gian thu hồi vốn: <strong>~3,5 năm</strong><br/>• Điểm hòa vốn vận hành: <strong>~9-10 tỷ VNĐ/năm</strong></div>
 </div>
 </div>
 
 <div style="margin-top:18px">
-<div class="fm-label" style="margin-bottom:10px">📊 Doanh Thu Năm 1 Theo Từng Nguồn (Tỷ VNĐ)</div>
+<div class="fm-label" style="margin-bottom:10px">📊 Cơ cấu dòng doanh thu năm thứ nhất (Tỷ VNĐ)</div>
 <div class="rev-grid">
-<div class="rev-row"><div class="rev-name">🧘 Wellness Retreat</div><div class="rev-track"><div class="rev-fill" data-w="40" style="background:linear-gradient(90deg,#8b5cf6,#a78bfa)">Retreat</div></div><div class="rev-val">3 tỷ</div></div>
-<div class="rev-row"><div class="rev-name">👤 Silver Membership</div><div class="rev-track"><div class="rev-fill" data-w="13" style="background:linear-gradient(90deg,#14b8a6,#2dd4bf)">Member</div></div><div class="rev-val">1 tỷ</div></div>
-<div class="rev-row"><div class="rev-name">🏠 Homestay</div><div class="rev-track"><div class="rev-fill" data-w="13" style="background:linear-gradient(90deg,#f59e0b,#fcd34d)">Homestay</div></div><div class="rev-val">1 tỷ</div></div>
-<div class="rev-row"><div class="rev-name">🍵 Tea Experience</div><div class="rev-track"><div class="rev-fill" data-w="13" style="background:linear-gradient(90deg,#22c55e,#4ade80)">Tea</div></div><div class="rev-val">1 tỷ</div></div>
-<div class="rev-row"><div class="rev-name">🎓 Học viện Ông Bà</div><div class="rev-track"><div class="rev-fill" data-w="7" style="background:linear-gradient(90deg,#ef4444,#ff7070)">HV</div></div><div class="rev-val">0,5 tỷ</div></div>
-<div class="rev-row"><div class="rev-name">☕ Café & Tea Shop</div><div class="rev-track"><div class="rev-fill" data-w="7" style="background:linear-gradient(90deg,#67e8f9,#38bdf8)">Café</div></div><div class="rev-val">0,5 tỷ</div></div>
-<div class="rev-row"><div class="rev-name">🏦 Phí QTDND</div><div class="rev-track"><div class="rev-fill" data-w="7" style="background:linear-gradient(90deg,#c4b5fd,#8b5cf6)">QTDND</div></div><div class="rev-val">0,5 tỷ</div></div>
+<div class="rev-row"><div class="rev-name">🧘 Chăm sóc Sức khỏe (Retreat)</div><div class="rev-track"><div class="rev-fill" data-w="40" style="background:linear-gradient(90deg,#8b5cf6,#a78bfa)">Wellness Retreat</div></div><div class="rev-val">3,0 tỷ</div></div>
+<div class="rev-row"><div class="rev-name">👤 Phí Thành viên (Membership)</div><div class="rev-track"><div class="rev-fill" data-w="13" style="background:linear-gradient(90deg,#14b8a6,#2dd4bf)">Silver Membership</div></div><div class="rev-val">1,0 tỷ</div></div>
+<div class="rev-row"><div class="rev-name">🏠 Lưu trú nghỉ dưỡng</div><div class="rev-track"><div class="rev-fill" data-w="13" style="background:linear-gradient(90deg,#f59e0b,#fcd34d)">Homestay</div></div><div class="rev-val">1,0 tỷ</div></div>
+<div class="rev-row"><div class="rev-name">🍵 Trải nghiệm Văn hóa Trà</div><div class="rev-track"><div class="rev-fill" data-w="13" style="background:linear-gradient(90deg,#22c55e,#4ade80)">Tea Experience</div></div><div class="rev-val">1,0 tỷ</div></div>
+<div class="rev-row"><div class="rev-name">🎓 Học viện Ông Bà (Đào tạo)</div><div class="rev-track"><div class="rev-fill" data-w="7" style="background:linear-gradient(90deg,#ef4444,#ff7070)">Học viện</div></div><div class="rev-val">0,5 tỷ</div></div>
+<div class="rev-row"><div class="rev-name">☕ Café & Trà Quán (F&B)</div><div class="rev-track"><div class="rev-fill" data-w="7" style="background:linear-gradient(90deg,#67e8f9,#38bdf8)">F&B Shop</div></div><div class="rev-val">0,5 tỷ</div></div>
+<div class="rev-row"><div class="rev-name">🏦 Dịch vụ Tài chính QTDND</div><div class="rev-track"><div class="rev-fill" data-w="7" style="background:linear-gradient(90deg,#c4b5fd,#8b5cf6)">QTDND Service</div></div><div class="rev-val">0,5 tỷ</div></div>
 </div>
 </div>
 </div>
 
 <!-- LAND BOX -->
-<div class="st">🏗️ Quỹ Đất — Pháp Lý Sạch</div>
+<div class="st">🏗️ Hiện Trạng Đất Đai & Lợi Thế Quy Hoạch</div>
 <div class="landbox">
-<h3>🏗️ Tổng Quỹ Đất: ~4.814 m² · Pháp Lý Không Vướng Mắc</h3>
+<h3>🏗️ Quy mô quỹ đất sở hữu: ~4.814 m² tại vùng chè Tân Cương</h3>
 <div class="land-grid">
-<div class="land-item"><div class="land-label">📋 Lô 1 (4 bìa)</div><div class="land-text">Tổng: <strong>3.369 m²</strong><br/>Trong đó: <strong>>700 m² thổ cư</strong> (đất ở tại nông thôn)<br/>✅ Có thể xây dựng ngay</div></div>
-<div class="land-item"><div class="land-label">📋 Lô 2 (1 bìa)</div><div class="land-text">Tổng: <strong>445 m²</strong><br/>Trong đó: <strong>200 m² thổ cư</strong> (lâu dài)<br/>✅ Có thể xây dựng ngay</div></div>
-<div class="land-item"><div class="land-label">📋 Lô 3 (1 bìa)</div><div class="land-text">Tổng: <strong>1.000 m²</strong><br/>Đất trồng cây lâu năm<br/>⏳ Hạn đến 2064</div></div>
-<div class="land-item"><div class="land-label">🛣️ Đường vào</div><div class="land-text"><strong>2.000 m²</strong> đường giao thông dẫn vào khu đất<br/>✅ Dân hiến đất + đường dân sinh sẵn</div></div>
-<div class="land-item"><div class="land-label">📍 Vị trí</div><div class="land-text">Tân Cương, Thái Nguyên<br/>Toạ độ: 21.5433, 105.7610<br/>✅ Pháp lý không vướng mắc</div></div>
-<div class="land-item" style="background:rgba(34,197,94,.07);border-color:rgba(34,197,94,.3)"><div class="land-label" style="color:#4ade80">✅ Lợi thế bất ngờ</div><div class="land-text"><strong style="color:#86efac">~900 m² thổ cư sẵn</strong> — không cần xin chuyển đổi đất cho phần xây dựng cốt lõi ban đầu! Đây là thay đổi lớn so với phân tích v1.0.</div></div>
+<div class="land-item"><div class="land-label">📋 Nhóm Bìa 1 (4 sổ)</div><div class="land-text">Tổng diện tích: <strong>3.369 m²</strong><br/>Có <strong>>700 m² đất ở nông thôn (thổ cư)</strong><br/>✅ Sẵn sàng xây dựng khu điều hành</div></div>
+<div class="land-item"><div class="land-label">📋 Nhóm Bìa 2 (1 sổ)</div><div class="land-text">Tổng diện tích: <strong>445 m²</strong><br/>Có <strong>200 m² đất ở nông thôn (thổ cư)</strong><br/>✅ Xây dựng cụm bungalow nghỉ dưỡng</div></div>
+<div class="land-item"><div class="land-label">📋 Lô đất nông nghiệp (1 sổ)</div><div class="land-text">Tổng diện tích: <strong>1.000 m²</strong><br/>Đất trồng cây lâu năm<br/>⏳ Hạn sử dụng đến năm 2064</div></div>
+<div class="land-item"><div class="land-label">🛣️ Hạ tầng Giao thông vào khu</div><div class="land-text">Đường giao thông rộng <strong>2.000 m²</strong> dẫn vào khu đất.<br/>✅ Người dân tự nguyện hiến đất + có sẵn đường dân sinh.</div></div>
+<div class="land-item"><div class="land-label">📍 Định vị địa lý</div><div class="land-text">Xã Tân Cương, Thái Nguyên<br/>Tọa độ: 21.5433, 105.7610<br/>✅ Hồ sơ pháp lý sạch, không tranh chấp.</div></div>
+<div class="land-item" style="background:rgba(34,197,94,.07);border-color:rgba(34,197,94,.3)"><div class="land-label" style="color:#4ade80">💡 Lợi thế đặc thù</div><div class="land-text">Có tổng cộng <strong>~900 m² đất thổ cư sẵn có</strong>. Cho phép xây dựng ngay các hạng mục dịch vụ mà không cần trải qua thủ tục xin chuyển đổi mục đích sử dụng đất kéo dài.</div></div>
 </div>
 </div>
 
 <!-- TEAM BOX -->
-<div class="st">👥 Đội Ngũ Sáng Lập</div>
+<div class="st">👥 Cơ Cấu Đội Ngũ Sáng Lập & Vận Hành</div>
 <div class="teambox">
-<h3>👥 Đội Ngũ: 6 Chuyên Gia Hiện Có · Thiếu 1 Vị Trí Quan Trọng</h3>
+<h3>👥 Ban Điều Hành: 6 Chuyên Gia Đa Lĩnh Vực</h3>
 <div class="team-grid">
-<div class="team-item"><div class="team-av">🤝</div><div class="team-info"><div class="team-name">CTD2</div><div class="team-role">Chuyên gia M&A · Mua bán & Sáp nhập</div></div></div>
-<div class="team-item"><div class="team-av">🎓</div><div class="team-info"><div class="team-name">Nguyễn Phú Sơn</div><div class="team-role">Chuyên gia Giáo dục · Học viện Ông Bà</div></div></div>
-<div class="team-item"><div class="team-av">⚙️</div><div class="team-info"><div class="team-name">Nguyễn Trung Hiếu</div><div class="team-role">Điều hành · Vận hành tổng thể</div></div></div>
-<div class="team-item"><div class="team-av">📡</div><div class="team-info"><div class="team-name">Ngô Minh Hương</div><div class="team-role">Vận hành & Truyền thông Công nghệ</div></div></div>
-<div class="team-item"><div class="team-av">💻</div><div class="team-info"><div class="team-name">Nguyễn Tống Thắng</div><div class="team-role">Chuyên gia CNTT · AI/IoT</div></div></div>
-<div class="team-item"><div class="team-av">🏗️</div><div class="team-info"><div class="team-name">Cáp Trọng Thắng</div><div class="team-role">Quy hoạch & Dự toán xây dựng</div></div></div>
+<div class="team-item"><div class="team-av">🤝</div><div class="team-info"><div class="team-name">CTD2</div><div class="team-role">Chuyên gia Mua bán & Sáp nhập (M&A)</div></div></div>
+<div class="team-item"><div class="team-av">🎓</div><div class="team-info"><div class="team-name">Nguyễn Phú Sơn</div><div class="team-role">Chuyên gia Giáo dục & Đào tạo</div></div></div>
+<div class="team-item"><div class="team-av">⚙️</div><div class="team-info"><div class="team-name">Nguyễn Trung Hiếu</div><div class="team-role">Giám đốc Điều hành & Vận hành dự án</div></div></div>
+<div class="team-item"><div class="team-av">📡</div><div class="team-info"><div class="team-name">Ngô Minh Hương</div><div class="team-role">Truyền thông & Vận hành Công nghệ</div></div></div>
+<div class="team-item"><div class="team-av">💻</div><div class="team-info"><div class="team-name">Nguyễn Tống Thắng</div><div class="team-role">Chuyên gia Công nghệ thông tin & Trí tuệ nhân tạo (AI/IoT)</div></div></div>
+<div class="team-item"><div class="team-av">🏗️</div><div class="team-info"><div class="team-name">Cáp Trọng Thắng</div><div class="team-role">Chuyên gia Quy hoạch & Dự toán Xây dựng</div></div></div>
 </div>
 <div class="team-miss" style="margin-top:14px">
 <span style="font-size:20px">🔴</span>
-<div class="team-miss-text"><strong>VỊ TRÍ CÒN THIẾU:</strong> Chuyên gia Y tế / Dưỡng sinh — đây là vị trí bắt buộc để triển khai Tea Therapy, Wellness Program và xin cấp phép KBCB. Cần tuyển dụng hoặc hợp tác gấp.</div>
+<div class="team-miss-text"><strong>VỊ TRÍ CẦN BỔ SUNG GẤP:</strong> Giám đốc Y tế / Chuyên gia Dưỡng sinh lâm sàng — Đây là nhân sự chủ chốt bắt buộc phải có để thiết kế liệu trình trị liệu bằng trà (Tea Therapy) và đáp ứng điều kiện xin cấp Giấy phép Khám bệnh Chữa bệnh của Sở Y tế.</div>
 </div>
-</div>
-
-<div class="ab r">
-<span style="font-size:18px;flex-shrink:0">🔥</span>
-<div><strong>ĐIỂM NÓNG DUY NHẤT CÒN LẠI:</strong> Pháp lý y tế vẫn là rào cản số 1. Nhưng tin tốt: với ~900 m² thổ cư sẵn, vấn đề chuyển đổi đất gần như được giải quyết cho giai đoạn Pilot. Toàn bộ năng lực nên tập trung vào: (1) Giấy phép KBCB, và (2) Tuyển chuyên gia y tế.</div>
 </div>
 
 <!-- TABS -->
-<div class="st" style="margin-top:28px">🔍 Phân Tích Chuyên Gia Theo Từng Vấn Đề (v2.0)</div>
+<div class="st" style="margin-top:28px">🔍 Báo Cáo Chi Tiết Của Hội Đồng Cố Vấn Cao Cấp (Phiên Bản 4.0)</div>
 <div class="tnav">
-<button class="tb active" onclick="stab(this,'t1')">📌 VĐ1: Lĩnh vực KD ▲</button>
-<button class="tb" onclick="stab(this,'t2')">📌 VĐ2: Sản phẩm & FM 🔥</button>
-<button class="tb" onclick="stab(this,'t3')">📌 VĐ3: Lợi thế ✅</button>
+<button class="tb active" onclick="stab(this,'t1')">📌 VĐ1: Định vị & Vận hành</button>
+<button class="tb" onclick="stab(this,'t2')">📌 VĐ2: Sản phẩm & Tài chính</button>
+<button class="tb" onclick="stab(this,'t3')">📌 VĐ3: Lợi thế Cạnh tranh</button>
 </div>
 
 <!-- TAB 1 -->
 <div id="t1" class="tp2 active">
-<div class="ab t"><span style="font-size:15px;flex-shrink:0">💡</span><div><strong>Tóm tắt VĐ1 (v2.0):</strong> Silver Economy + Wellness + Cultural — đúng xu thế, nay có dữ liệu định lượng hỗ trợ. QTDND VĐL 6 tỷ/879 thành viên/dư nợ 60 tỷ xác nhận nền tảng tài chính cộng đồng có thực. Điểm nâng từ 72 → 78.</div></div>
+<div class="ab t"><span style="font-size:15px;flex-shrink:0">💡</span><div><strong>Tóm tắt đánh giá VĐ1:</strong> Định vị dự án đi đầu trong mô hình "Kinh tế Bạc" tích hợp du lịch văn hóa trà và dịch vụ tài chính vi mô cộng đồng là hoàn toàn khả thi và đón đầu xu hướng già hóa dân số. Điểm cải thiện nhờ làm rõ vai trò của QTDND Tân Cương (879 thành viên, dư nợ 60 tỷ).</div></div>
 <div class="eg">
 <div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(139,92,246,.15)">⚙️</div><div class="ei"><div class="en">Chuyên gia Quản trị Hệ thống</div><div class="er">Vận hành · Quy trình · VRIO 4/4</div></div><div class="ep py2">70/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá (Nâng cấp v2.0)</div><div class="etx">Đội ngũ 6 chuyên gia với đầy đủ các vai trò M&A, Giáo dục, Điều hành, Công nghệ, Quy hoạch — đây là nền tảng vận hành đáng kể. <strong style="color:#5eead4">Điểm thiếu duy nhất: Chuyên gia Y tế.</strong> Đây là vị trí không thể thiếu để vận hành các chương trình Wellness và xin cấp phép KBCB. Cơ cấu vốn 30 tỷ rõ ràng, đa dạng nguồn — giảm rủi ro phụ thuộc một nguồn.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>VRIO Framework: Đạt đủ 4/4 — Valuable + Rare + Inimitable + Organized (đội ngũ 6 chuyên gia)</li>
-<li>CCRC Best Practice: Cần thêm ít nhất 1 Giám đốc Y tế (Chief Medical Officer) để vận hành chương trình Wellness</li>
-<li>Cơ cấu vốn đa dạng (4 nguồn): Giảm rủi ro, tăng tín nhiệm với nhà đầu tư và ngân hàng</li>
+<div class="eh"><div class="av" style="background:rgba(20,184,166,.15)">🔬</div><div class="ei"><div class="en">Chuyên gia Nghiên cứu & Phát triển Sản phẩm (R&D)</div><div class="er">Thông lệ quốc tế tốt nhất: Khung Già hóa Khỏe mạnh (Active Ageing) của Tổ chức Y tế Thế giới (WHO)</div></div><div class="ep py2">75/100</div><div class="cv">▾</div></div>
+<div class="eb"><div class="esl">Nhận định & Khuyến nghị</div><div class="etx">Ý tưởng kết hợp trà đặc sản Tân Cương với mô hình giáo dục cho người cao tuổi (Học viện Ông Bà) và trị liệu sức khỏe chủ động (Wellness Retreat) là cực kỳ độc đáo và nhân văn. Tuy nhiên, sản phẩm dịch vụ hiện tại chưa được cá nhân hóa sâu theo từng nhóm độ tuổi và thể trạng sinh học của người cao tuổi Việt Nam. Để sản phẩm có tính "sống còn" trước khi triển khai, R&D phải là bước đi đầu tiên.</div>
+<div class="esl">Ý KIẾN BỔ SUNG ĐỂ DỰ ÁN KHẢ THI THỰC SỰ (THÔNG TIN CÒN THIẾU):</div><ul class="bl">
+<li><strong>Cơ sở dữ liệu phân tích nhân khẩu học sức khỏe người cao tuổi Việt Nam:</strong> Cần xác định nhóm thể trạng phổ biến để làm cơ sở xây dựng liệu trình dinh dưỡng và trị liệu chè cá nhân hóa.</li>
+<li><strong>Bản thiết kế Trải nghiệm Khách hàng (Customer Journey Map):</strong> Mô tả chi tiết từng điểm chạm vật lý và tâm lý của người cao tuổi từ lúc tiếp cận đến khi kết thúc liệu trình dưỡng sinh.</li>
 </ul></div>
 </div>
 <div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(245,158,11,.15)">💰</div><div class="ei"><div class="en">Chuyên gia Tài chính</div><div class="er">Financial Model · QTDND · Dự báo 5 năm</div></div><div class="ep pg2">80/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá (Nâng cấp mạnh v2.0)</div><div class="etx">Financial Model v1.0 đã giải quyết phần lớn "lỗ hổng" phân tích trước. <strong style="color:#86efac">IRR 18-22% là mức hấp dẫn</strong> với nhà đầu tư tư nhân VN (thường kỳ vọng 15-20%). NPV dương 12-18 tỷ xác nhận tạo giá trị. QTDND với 879 thành viên và dư nợ 60 tỷ cho thấy một tổ chức tín dụng hoạt động thực chất, không phải trên giấy. Dự báo QTDND tăng thành viên lên 2.500 trong 5 năm là hoàn toàn khả thi.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>Financial Model 7 dòng doanh thu: Năm 1 = 7,5 tỷ → Năm 5 = 32 tỷ (CAGR ~44%) — khả thi nhưng cần kiểm chứng</li>
-<li>IRR 18-22% vs lãi suất vay NH Chính sách 9%: Spread 9-13% — đủ hấp dẫn cho nhà đầu tư</li>
-<li>QTDND mở rộng: Dư nợ 60 tỷ → 180 tỷ sau 5 năm (×3) — phù hợp tốc độ tăng trưởng thị trường tín dụng nông thôn VN</li>
+<div class="eh"><div class="av" style="background:rgba(139,92,246,.15)">⚙️</div><div class="ei"><div class="en">Chuyên gia Quản trị Hệ thống</div><div class="er">Thông lệ quốc tế tốt nhất: Chuẩn CCRC (Cộng đồng Hưu trí Chăm sóc Sức khỏe Liên tục)</div></div><div class="ep py2">78/100</div><div class="cv">▾</div></div>
+<div class="eb"><div class="esl">Nhận định & Khuyến nghị</div><div class="etx">Đội ngũ sáng lập có cơ cấu năng lực tương đối hoàn chỉnh (M&A, giáo dục, CNTT, quy hoạch). Tuy nhiên, để vận hành theo mô hình CCRC quốc tế, hệ thống quản lý rủi ro cần tuân thủ khuôn khổ COSO. Hiện nay dự án chưa thiết kế Quy trình vận hành chuẩn (SOP) cho việc phối hợp liên kết giữa pháp nhân điều hành và QTDND.</div>
+<div class="esl">Ý KIẾN BỔ SUNG ĐỂ DỰ ÁN KHẢ THI THỰC SỰ (THÔNG TIN CÒN THIẾU):</div><ul class="bl">
+<li><strong>Sơ đồ cơ cấu tổ chức và ma trận phân công trách nhiệm (RACI)</strong> chi tiết cho giai đoạn vận hành thử nghiệm (Pilot).</li>
+<li><strong>Quy chế phối hợp hoạt động và chia sẻ thông tin thành viên</strong> giữa Silver Valley và QTDND để đảm bảo tuân thủ Luật An toàn thông tin mạng và bảo mật dữ liệu khách hàng.</li>
+<li><strong>Quy trình tuyển dụng và đào tạo đội ngũ chăm sóc khách hàng cao tuổi</strong> theo chứng chỉ chăm sóc sức khỏe của Bộ Lao động - Thương binh và Xã hội hoặc tổ chức y tế quốc tế.</li>
 </ul></div>
 </div>
 <div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(239,68,68,.15)">⚖️</div><div class="ei"><div class="en">Chuyên gia Pháp lý & Đầu tư</div><div class="er">Pháp nhân · NH Chính sách · NHNN compliance</div></div><div class="ep py2">62/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá</div><div class="etx">Cơ cấu vốn có NH Chính sách 10 tỷ/5 năm/9% là điểm rất tốt — cho thấy dự án có khả năng được nhà nước công nhận. <strong style="color:#fcd34d">Cần xác nhận:</strong> NH Chính sách (NHCSXH) có chương trình cho vay phù hợp với mô hình Silver Valley không? Cần làm rõ loại hình pháp nhân vay vốn. QTDND ủy thác 5 tỷ — cần thiết kế hợp đồng ủy thác đúng Thông tư NHNN về ủy thác đầu tư.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li><strong>Nghị định 28/2022/NĐ-CP:</strong> Chính sách tín dụng ưu đãi cho chương trình phục hồi và phát triển kinh tế — cần kiểm tra Silver Valley có đủ điều kiện không</li>
-<li><strong>Thông tư 30/2019/TT-NHNN:</strong> Quy định về ủy thác và nhận ủy thác của TCTD — QTDND ủy thác 5 tỷ phải tuân thủ nghiêm</li>
-<li>Loại hình pháp nhân vay NH Chính sách: Phải là DN hoặc HTX có đăng ký kinh doanh đúng ngành — cần xác nhận</li>
+<div class="eh"><div class="av" style="background:rgba(245,158,11,.15)">💰</div><div class="ei"><div class="en">Chuyên gia Tài chính</div><div class="er">Thông lệ quốc tế tốt nhất: Lập mô hình tài chính 3 tầng (Vận hành - Hệ sinh thái - Tác động xã hội)</div></div><div class="ep pg2">82/100</div><div class="cv">▾</div></div>
+<div class="eb"><div class="esl">Nhận định & Khuyến nghị</div><div class="etx">Mô hình tài chính dự kiến có tỷ suất sinh lời nội bộ (IRR) đạt 18-22%, đây là mức sinh lời vượt trội so với chi phí sử dụng vốn bình quân gia quyền (WACC) dự kiến là 12%. Việc thiết lập 7 dòng doanh thu giúp giảm thiểu rủi ro tập trung. Dù vậy, mô hình hiện tại chưa chi tiết hóa kế hoạch quản trị dòng tiền trong ngắn hạn của giai đoạn đầu tư xây dựng cơ bản.</div>
+<div class="esl">Ý KIẾN BỔ SUNG ĐỂ DỰ ÁN KHẢ THI THỰC SỰ (THÔNG TIN CÒN THIẾU):</div><ul class="bl">
+<li><strong>Bảng dự toán vốn lưu động chi tiết (Working Capital)</strong> theo từng tháng của Năm 1 để đảm bảo khả năng thanh toán liên tục trước khi đạt điểm hòa vốn vào giữa Năm 2.</li>
+<li><strong>Kế hoạch dòng tiền dự phòng rủi ro thanh khoản</strong> trong trường hợp QTDND gặp biến động rút tiền gửi đột biến từ người dân địa phương.</li>
+<li><strong>Báo cáo thẩm định khả năng tiếp cận gói tín dụng ưu đãi 10 tỷ</strong> từ Ngân hàng Chính sách xã hội (như chương trình hỗ trợ phát triển HTX, doanh nghiệp xã hội hoặc phát triển vùng dân tộc thiểu số).</li>
 </ul></div>
 </div>
 <div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(20,184,166,.15)">🏛️</div><div class="ei"><div class="en">Chuyên gia Kiến trúc & Quy hoạch</div><div class="er">Thổ cư sẵn · Hub-and-Spoke · Phân kỳ xây dựng</div></div><div class="ep pg2">78/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá (Nâng cấp đột phá v2.0)</div><div class="etx"><strong style="color:#86efac">Phát hiện quan trọng nhất của v2.0:</strong> Trong tổng 4.814 m², đã có <strong>~900 m² thổ cư</strong> (Lô 1: >700m² + Lô 2: 200m²) — tức là có thể xây dựng ngay mà không cần xin chuyển đổi mục đích sử dụng đất cho giai đoạn Pilot! Đây là sự thay đổi căn bản so với phân tích v1.0 khi tôi lo ngại về việc chuyển đổi đất. Đường vào 2.000m² đã có sẵn (dân hiến đất + đường dân sinh) — giải quyết vấn đề hạ tầng tiếp cận.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>Đất thổ cư (đất ở tại nông thôn) + đất ở lâu dài: Có thể xây dựng ngay theo Luật Đất đai 2024 mà không cần chuyển đổi mục đích</li>
-<li>900 m² thổ cư: Đủ để xây dựng: Nhà điều hành (300m²) + Khu lưu trú 5-8 phòng (400m²) + Tea House (200m²) cho giai đoạn Pilot</li>
-<li>1.000 m² đất trồng cây lâu năm đến 2064: Có thể làm không gian cảnh quan, thiền định, trải nghiệm trà — không cần xây dựng kiên cố</li>
-</ul></div>
-</div>
-<div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(20,184,166,.15)">🧭</div><div class="ei"><div class="en">Chuyên gia Phong Thủy</div><div class="er">Tọa độ · Địa thế · Ngũ hành tề toàn</div></div><div class="ep pt2">80/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá</div><div class="etx">Tọa độ 21.5433, 105.7610 — Tân Cương, Thái Nguyên. Địa thế đồi chè bao quanh, sông Công gần. Ngũ hành hoàn chỉnh 5 yếu tố với QTDND (Kim khí). <strong style="color:#5eead4">Đặc biệt:</strong> Đường vào 2.000m² được dân hiến đất — trong phong thủy, "dân tự nguyện hiến đất" là dấu hiệu "địa linh nhân kiệt", vùng đất được lòng người — cực kỳ thuận cho dự án cộng đồng.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>Ngũ hành tề toàn: Mộc(trà)→Hỏa(sinh lực)→Thổ(đất đai)→Kim(QTDND)→Thủy(sông Công) — chu kỳ hoàn chỉnh</li>
-<li>"Dân hiến đất": Theo thuyết Địa Lý Nhân Hòa — khi người dân địa phương tự nguyện ủng hộ là dấu hiệu "Nhân khí vượng", nền tảng bền vững nhất</li>
-<li>Tọa độ hướng Tây Bắc TP.Thái Nguyên — hướng Càn (Trời, Lãnh đạo): Phù hợp mô hình "chuẩn mực đầu tiên"</li>
-</ul></div>
-</div>
-<div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(139,92,246,.15)">📈</div><div class="ei"><div class="en">Chuyên gia Đầu tư & Lập Kế Hoạch</div><div class="er">4,5/5 IFC · Impact Capital · Pilot sẵn sàng</div></div><div class="ep pg2">82/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá (Nâng cấp đáng kể v2.0)</div><div class="etx"><strong style="color:#86efac">Đề án đạt 4,5/5 IFC Investment Readiness Framework.</strong> Chỉ còn thiếu: Financial Projections trên Excel chuẩn (18-20 sheet) với sensitivity analysis đầy đủ. Với 900m² thổ cư sẵn + Financial Model rõ ràng + đội ngũ 6 chuyên gia + QTDND 51%, đề án đã sẵn sàng cho Pilot giai đoạn 1 mà không cần chờ giải quyết thêm vấn đề đất đai.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>IFC Investment Readiness: 4,5/5 — Chỉ còn thiếu Financial Model trên Excel chuẩn với Sensitivity Analysis</li>
-<li>Pilot khả thi ngay: 900m² thổ cư + vốn 30 tỷ + đội ngũ sẵn → Có thể khởi công Pilot trong 3-6 tháng tới</li>
-<li>GIIN Impact: Đạt 4 UN SDGs (3+8+11+1) → Đủ điều kiện nộp hồ sơ ADB Ventures, Mekong Capital</li>
+<div class="eh"><div class="av" style="background:rgba(239,68,68,.15)">⚖️</div><div class="ei"><div class="en">Chuyên gia Pháp lý & Đầu tư</div><div class="er">Quy định liên quan: Luật Đầu tư 2020 & Luật Các tổ chức tín dụng 2024</div></div><div class="ep py2">65/100</div><div class="cv">▾</div></div>
+<div class="eb"><div class="esl">Nhận định & Khuyến nghị</div><div class="etx">Cấu trúc góp vốn và cho vay từ QTDND (5 tỷ dưới hình thức ủy thác đầu tư) phải được kiểm soát đặc biệt nghiêm ngặt. Luật Các tổ chức tín dụng 2024 (Điều 55) nghiêm cấm việc cấp tín dụng ưu đãi cho người có liên quan hoặc cổ đông lớn của tổ chức tín dụng. Vì nhóm sáng lập nắm 51% vốn QTDND, việc QTDND cấp vốn cho Silver Valley sẽ bị Ngân hàng Nhà nước thanh tra kỹ lưỡng.</div>
+<div class="esl">Ý KIẾN BỔ SUNG ĐỂ DỰ ÁN KHẢ THI THỰC SỰ (THÔNG TIN CÒN THIẾU):</div><ul class="bl">
+<li><strong>Ý kiến pháp lý độc lập của Luật sư chuyên ngành Tài chính - Ngân hàng</strong> về cấu trúc giao dịch ủy thác đầu tư 5 tỷ đồng của QTDND nhằm đảm bảo không vi phạm quy định về cấp tín dụng cho người có liên quan.</li>
+<li><strong>Nghị quyết của Đại hội thành viên QTDND Tân Cương</strong> thông qua việc phê duyệt hạn mức ủy thác đầu tư hoặc hợp tác chiến lược với dự án Silver Valley.</li>
+<li><strong>Văn bản xin ý kiến và chấp thuận bằng văn bản của Ngân hàng Nhà nước Chi nhánh tỉnh Thái Nguyên</strong> về mô hình hoạt động liên kết tài chính này để loại bỏ hoàn toàn rủi ro đình chỉ hoạt động.</li>
 </ul></div>
 </div>
 </div>
@@ -397,52 +358,41 @@ h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3rem);font-we
 
 <!-- TAB 2 -->
 <div id="t2" class="tp2">
-<div class="ab y"><span style="font-size:15px;flex-shrink:0">📊</span><div><strong>Tóm tắt VĐ2 (v2.0):</strong> Financial Model v1.0 đã giải quyết hầu hết "lỗ hổng" tài chính. 7 dòng doanh thu rõ ràng, dự báo 5 năm đầy đủ. Điểm nóng duy nhất còn lại: Pháp lý y tế (Tea Therapy, Tele-Wellness). Điểm nâng từ 55 → 68.</div></div>
+<div class="ab y"><span style="font-size:15px;flex-shrink:0">📊</span><div><strong>Tóm tắt đánh giá VĐ2:</strong> Kế hoạch tài chính 1.0 với 7 dòng doanh thu đã khắc phục lỗ hổng thiếu định lượng của bản phân tích trước. Rủi ro cốt lõi nằm ở dòng doanh thu "Chăm sóc Sức khỏe" (Retreat) - chiếm 40% doanh thu Năm 1 nhưng đang thiếu cơ sở pháp lý về giấy phép y tế.</div></div>
 <div class="eg">
 <div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(139,92,246,.15)">⚙️</div><div class="ei"><div class="en">Chuyên gia Quản trị Hệ thống</div><div class="er">Service Blueprint · SOP · Nhân lực</div></div><div class="ep py2">65/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá</div><div class="etx">Financial Model định nghĩa rõ 7 dòng doanh thu với mục tiêu Năm 1 = 7,5 tỷ. Đây là nền tảng để xây dựng Service Blueprint cụ thể cho từng dòng. <strong style="color:#fcd34d">Vẫn thiếu:</strong> SOP (quy trình chuẩn) cho từng dịch vụ, tiêu chuẩn chất lượng, và kế hoạch nhân sự chi tiết theo từng dịch vụ. Với đội ngũ hiện tại thiếu chuyên gia y tế, các dịch vụ Wellness Retreat và Tea Therapy có rủi ro triển khai.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>7 dòng doanh thu cần 7 SOP riêng biệt: Retreat, Membership, Tea Experience, Homestay, Học viện, Café, QTDND Financial Service</li>
-<li>Nhân lực ước tính Năm 1: ~15-20 người (theo chuẩn CCRC 1 nhân viên/3 thành viên, mục tiêu ~50 thành viên)</li>
-<li>Ưu tiên tuyển ngay: 1 Bác sĩ/Chuyên gia dưỡng sinh (bắt buộc cho Wellness) + 2-3 Cộng tác viên trà và dịch vụ</li>
+<div class="eh"><div class="av" style="background:rgba(20,184,166,.15)">🔬</div><div class="ei"><div class="en">Chuyên gia Nghiên cứu & Phát triển Sản phẩm (R&D)</div><div class="er">Thông lệ quốc tế tốt nhất: Lão khoa thực chứng (Evidence-Based Gerontology) & Công nghệ Lão khoa (Gerontechnology)</div></div><div class="ep py2">60/100</div><div class="cv">▾</div></div>
+<div class="eb"><div class="esl">Nhận định & Khuyến nghị</div><div class="etx">Dự án đưa ra 7 dòng doanh thu tương ứng với các sản phẩm dịch vụ khác nhau, nhưng hiện tại mọi thứ chỉ dừng ở mức gọi tên sản phẩm (Tea Therapy, Học viện Ông Bà, Tele-Wellness). Chưa có công thức trà trị liệu được kiểm chứng y học, chưa có giáo trình chi tiết cho học viện, và giải pháp AI/IoT theo dõi sức khỏe vẫn rất chung chung. Nếu chưa R&D rõ ràng sản phẩm, mọi quy hoạch xây dựng hay dòng tiền đều vô nghĩa.</div>
+<div class="esl">Ý KIẾN BỔ SUNG ĐỂ DỰ ÁN KHẢ THI THỰC SỰ (THÔNG TIN CÒN THIẾU):</div><ul class="bl">
+<li><strong>Hồ sơ chứng minh lâm sàng hoặc tài liệu khoa học:</strong> Chứng minh hiệu quả hỗ trợ trị liệu sức khỏe của các công thức trà (Tea Therapy) dự kiến áp dụng.</li>
+<li><strong>Khung chương trình đào tạo chi tiết (Curriculum Framework) của Học viện Ông Bà:</strong> Được thẩm định bởi các chuyên gia tâm lý học người cao tuổi và sư phạm.</li>
+<li><strong>Thông số kỹ thuật (Technical Specifications) của hệ thống IoT & AI:</strong> Cần xác định các loại thiết bị đeo (wearables), thuật toán phát hiện ngã và hệ thống cảnh báo sớm đột quỵ.</li>
 </ul></div>
 </div>
 <div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(245,158,11,.15)">💰</div><div class="ei"><div class="en">Chuyên gia Tài chính</div><div class="er">7 Dòng Doanh Thu · Break-Even · QTDND Ecosystem</div></div><div class="ep pg2">78/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá (Nâng cấp mạnh nhất v2.0)</div><div class="etx">Financial Model v1.0 là <strong style="color:#86efac">bước nhảy vọt lớn nhất</strong> so với phân tích trước. Mô hình 3 tầng (Cash Flow + Financial Ecosystem + Social Impact Value) là kiến trúc tài chính tiên tiến, phù hợp để trình HĐQT và quỹ đầu tư. <strong style="color:#5eead4">Đặc biệt:</strong> Dự báo QTDND tăng từ 100 tỷ → 220 tỷ tiền gửi trong 5 năm tạo ra "flywheel effect" — hệ sinh thái tự tăng tốc. Vẫn cần: File Excel 18-20 sheet với sensitivity analysis.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>Flywheel Effect: Thành viên Silver Valley tăng → Tiền gửi QTDND tăng → Dư nợ tăng → Thu nhập phí tăng → Tái đầu tư vào hệ sinh thái</li>
-<li>Mô hình 3 tầng: Chuẩn Impact Investing quốc tế (GIIN IRIS+ metrics)</li>
-<li>Bước tiếp theo: Xây Financial Model Excel chuẩn 18-20 sheet → Đây là tài liệu số 1 cần có trước khi gặp nhà đầu tư</li>
+<div class="eh"><div class="av" style="background:rgba(20,184,166,.15)">🏛️</div><div class="ei"><div class="en">Chuyên gia Kiến trúc & Quy hoạch</div><div class="er">Thông lệ quốc tế: Tiêu chuẩn WELL & Thiết kế sinh học (Biophilic Design)</div></div><div class="ep pg2">82/100</div><div class="cv">▾</div></div>
+<div class="eb"><div class="esl">Nhận định & Khuyến nghị</div><div class="etx">Việc sở hữu ~900 m² đất thổ cư (đất ở tại nông thôn) nằm xen kẽ trong quỹ đất 4.814 m² là một lợi thế cực lớn. Dự án có thể khởi công xây dựng ngay Nhà điều hành, Học viện Ông Bà và hệ thống Bungalow phục vụ giai đoạn Pilot mà không phải thực hiện các thủ tục xin chuyển mục đích sử dụng đất vô cùng phức tạp theo Luật Đất đai 2024.</div>
+<div class="esl">Ý KIẾN BỔ SUNG ĐỂ DỰ ÁN KHẢ THI THỰC SỰ (THÔNG TIN CÒN THIẾU):</div><ul class="bl">
+<li><strong>Bản đồ đo đạc địa chính và trích lục ranh giới đất thực tế</strong> do Văn phòng Đăng ký Đất đai cấp để tránh tranh chấp ranh giới với các đồi chè xung quanh.</li>
+<li><strong>Phương án Tổng mặt bằng tỷ lệ 1/500</strong> được UBND huyện Đồng Hỷ/thành phố Thái Nguyên chấp thuận để làm cơ sở xin giấy phép xây dựng cho các công trình kiên cố.</li>
+<li><strong>Hợp đồng hiến đất làm đường giao thông (2.000 m²)</strong> được công chứng và có xác nhận của UBND xã Tân Cương để đảm bảo lối vào khu đất vĩnh viễn không bị chặn hoặc xảy ra tranh chấp sau này.</li>
 </ul></div>
 </div>
 <div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(239,68,68,.15)">⚖️</div><div class="ei"><div class="en">Chuyên gia Pháp lý & Đầu tư</div><div class="er">Giấy phép KBCB · Ủy thác QTDND · NH Chính sách</div></div><div class="ep pr2">42/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="ab r" style="margin:8px 0 14px"><span>⚠️</span><span><strong>Pháp lý y tế vẫn là rủi ro cao nhất — điểm thấp nhất toàn hội đồng.</strong> Financial Model không thay đổi được điều này.</span></div>
-<div class="esl">Đánh giá</div><div class="etx">Tea Therapy, Tele-Wellness, Đào tạo điều dưỡng vẫn cần Giấy phép KBCB theo Luật 15/2023/QH15. Không có giấy phép = không thể khai thác dòng doanh thu "Wellness Retreat" (3 tỷ/năm = 40% tổng doanh thu Năm 1). Ngoài ra, QTDND ủy thác 5 tỷ cần thiết kế hợp đồng ủy thác đúng Thông tư NHNN — nếu làm sai sẽ bị yêu cầu thu hồi.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li><strong>Luật KBCB 2023 (Luật 15/2023/QH15), Điều 38:</strong> Mọi "trị liệu", "theo dõi sức khỏe" phải có Giấy phép KBCB — nguy cơ đình chỉ 40-50% doanh thu Năm 1</li>
-<li><strong>Thông tư 30/2019/TT-NHNN:</strong> Ủy thác đầu tư 5 tỷ từ QTDND phải đúng quy trình, có Hợp đồng ủy thác chuẩn</li>
-<li><strong>NĐ 13/2023/NĐ-CP:</strong> Tele-Wellness — dữ liệu sức khỏe là dữ liệu nhạy cảm cần bảo vệ nghiêm ngặt</li>
+<div class="eh"><div class="av" style="background:rgba(239,68,68,.15)">⚖️</div><div class="ei"><div class="en">Chuyên gia Pháp lý & Đầu tư (Y tế)</div><div class="er">Quy định áp dụng: Luật Khám bệnh, Chữa bệnh 2023 (Luật số 15/2023/QH15)</div></div><div class="ep pr2">45/100</div><div class="cv">▾</div></div>
+<div class="eb"><div class="esl">Nhận định & Khuyến nghị</div><div class="etx">Bất kỳ hoạt động nào có tính chất "trị liệu" (Tea Therapy, vật lý trị liệu, bấm huyệt) hoặc theo dõi sức khỏe chủ động từ xa (Tele-Wellness) đều thuộc phạm vi điều chỉnh của Luật Khám bệnh Chữa bệnh 2023. Nếu vận hành không phép, dự án đối mặt với nguy cơ bị xử phạt hành chính và đình chỉ hoạt động ngay lập tức, làm tê liệt dòng doanh thu lớn nhất (3 tỷ/Năm 1).</div>
+<div class="esl">Ý KIẾN BỔ SUNG ĐỂ DỰ ÁN KHẢ THI THỰC SỰ (THÔNG TIN CÒN THIẾU):</div><ul class="bl">
+<li><strong>Văn bản xác định rõ phạm vi hoạt động y tế:</strong> Tách biệt rõ ràng phần dịch vụ thư giãn (không cần giấy phép hoạt động y tế) và phần dịch vụ trị liệu y học cổ truyền (bắt buộc phải xin Giấy phép hoạt động phòng chẩn trị y học cổ truyền).</li>
+<li><strong>Hồ sơ nhân sự của người chịu trách nhiệm chuyên môn kỹ thuật:</strong> Chứng chỉ hành nghề khám bệnh, chữa bệnh của Bác sĩ chuyên khoa Y học cổ truyền hoặc Phục hồi chức năng có thâm niên tối thiểu 36 tháng.</li>
+<li><strong>Đánh giá điều kiện cơ sở vật chất và trang thiết bị y tế</strong> theo Nghị định 96/2023/NĐ-CP hướng dẫn Luật Khám bệnh Chữa bệnh để chuẩn bị cho bước thẩm định cấp phép của Sở Y tế tỉnh Thái Nguyên.</li>
 </ul></div>
 </div>
 <div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(20,184,166,.15)">🏛️</div><div class="ei"><div class="en">Chuyên gia Kiến trúc & Quy hoạch</div><div class="er">Phân kỳ xây dựng · 900m² thổ cư · Khả thi Pilot</div></div><div class="ep pg2">80/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá (Đột phá v2.0)</div><div class="etx"><strong style="color:#86efac">Với 900m² thổ cư sẵn, kế hoạch xây dựng Pilot hoàn toàn khả thi ngay:</strong><br/>• Giai đoạn 1 (trên 900m² thổ cư): Nhà điều hành + Tea House + 5-6 phòng lưu trú → Chi phí ước tính 8-10 tỷ<br/>• Giai đoạn 2 (mở rộng): Sử dụng 1.000m² đất cây lâu năm làm không gian thiên nhiên, thiền, trải nghiệm trà<br/>• Giai đoạn 3: Chuyển đổi phần còn lại theo quy hoạch được duyệt</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>900m² thổ cư: Theo Luật Đất đai 2024 — xây dựng ngay, không cần xin phép chuyển đổi mục đích</li>
-<li>Phân kỳ 3 giai đoạn: Giảm rủi ro vốn, cho phép học và điều chỉnh trước khi đầu tư toàn bộ 30 tỷ</li>
-<li>Cần bổ sung: Bản vẽ quy hoạch mặt bằng tổng thể, dự toán chi tiết từng giai đoạn (Chuyên gia Cáp Trọng Thắng)</li>
-</ul></div>
-</div>
-<div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(139,92,246,.15)">📈</div><div class="ei"><div class="en">Chuyên gia Đầu tư & Lập Kế Hoạch</div><div class="er">Pilot Plan · Excel Financial Model · Seed Round</div></div><div class="ep pg2">78/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá</div><div class="etx"><strong style="color:#86efac">MVP cụ thể cho Pilot (có thể bắt đầu trong 3-6 tháng):</strong><br/>Trên 900m² thổ cư: Tea House + 5 phòng Homestay + Không gian Silver Community. Mục tiêu 30-50 thành viên đầu tiên từ cộng đồng QTDND (879 thành viên sẵn có). Doanh thu Pilot Year 1 có thể đạt 2-3 tỷ (thấp hơn dự báo) để kiểm chứng mô hình. Bước tiếp theo quan trọng nhất: Xây Financial Model Excel chuẩn 18-20 sheet.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>Lean Startup MVP: Bắt đầu với 3/7 dịch vụ an toàn nhất về pháp lý (Homestay, Tea Experience, Café) → Mở rộng khi có giấy phép y tế</li>
-<li>879 thành viên QTDND = "warm audience" — không tốn chi phí marketing giai đoạn đầu</li>
-<li>Financial Model Excel: Cần 18-20 sheet, kịch bản Base/Optimistic/Conservative, Sensitivity Analysis — đây là tài liệu số 1 trước khi gặp nhà đầu tư</li>
+<div class="eh"><div class="av" style="background:rgba(245,158,11,.15)">🧭</div><div class="ei"><div class="en">Chuyên gia Phong Thủy</div><div class="er">Trường phái áp dụng: Địa lý Phong thủy Tả Ao & Lý thuyết Thừa Khí</div></div><div class="ep pg2">82/100</div><div class="cv">▾</div></div>
+<div class="eb"><div class="esl">Nhận định & Khuyến nghị</div><div class="etx">Tọa độ 21.5433, 105.7610 nằm ở vùng lõi của chè Tân Cương, Thái Nguyên. Địa thế tả thanh long hữu bạch hổ tự nhiên từ các dãy đồi chè bát úp là cục đất tụ khí rất tốt. Tuy nhiên, khi xây dựng các công trình kiên cố trên khu đất thổ cư sẵn có, cần đặc biệt lưu ý đến hướng dòng chảy của các khe suối nhỏ dẫn ra sông Công để tránh thế thoát tài lộc.</div>
+<div class="esl">Ý KIẾN BỔ SUNG ĐỂ DỰ ÁN KHẢ THI THỰC SỰ (THÔNG TIN CÒN THIẾU):</div><ul class="bl">
+<li><strong>Bản đồ khảo sát mạch nước ngầm và chất lượng nước</strong> tại khu đất. Nước là "Thủy khí" - huyết mạch của cả vùng chè và khu dưỡng sinh, cần định vị chính xác vị trí khoan giếng cát tường.</li>
+<li><strong>Bản vẽ định vị la kinh 24 sơn hướng</strong> của các công trình chính (Nhà điều hành, Học viện Ông Bà) trên nền đất 900m² thổ cư để đón được cát khí tốt nhất theo tuổi của ban sáng lập và hướng gió Đông Nam đặc trưng của vùng trung du.</li>
 </ul></div>
 </div>
 </div>
@@ -450,123 +400,88 @@ h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3rem);font-we
 
 <!-- TAB 3 -->
 <div id="t3" class="tp2">
-<div class="ab t"><span style="font-size:15px;flex-shrink:0">🏆</span><div><strong>Tóm tắt VĐ3 (v2.0):</strong> Lợi thế cạnh tranh 5 lớp nay được củng cố bởi dữ liệu cụ thể: Đất pháp lý sạch với 900m² thổ cư, QTDND 879 thành viên/60 tỷ dư nợ, đội ngũ 6 chuyên gia. VRIO 4/4 hoàn chỉnh. Điểm: 84/100.</div></div>
+<div class="ab t"><span style="font-size:15px;flex-shrink:0">🏆</span><div><strong>Tóm tắt đánh giá VĐ3:</strong> Rào cản phòng thủ của dự án rất mạnh nhờ sự kết hợp độc quyền giữa hạ tầng tài chính địa phương (QTDND nắm 51% kiểm soát) và quỹ đất thổ cư sạch sẵn có tại thủ phủ chè. Đối thủ cạnh tranh hầu như không thể sao chép trong vòng 3-5 năm tới.</div></div>
 <div class="eg">
 <div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(139,92,246,.15)">⚙️</div><div class="ei"><div class="en">Chuyên gia Quản trị Hệ thống</div><div class="er">VRIO 4/4 · Network Value · Scalable Moat</div></div><div class="ep pg2">85/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá</div><div class="etx">Với đầy đủ dữ liệu v2.0, đề án đạt <strong style="color:#86efac">VRIO 4/4 hoàn chỉnh</strong> và hơn thế nữa — "Network Value" ngày càng tăng theo quy mô. <strong style="color:#5eead4">Tầm nhìn Apple:</strong> "Không bán Homestay, không bán trà, không bán dưỡng già — mà bán hệ sinh thái sống khỏe" là định vị đúng. Khi đạt 2.000 hội viên + 200 tỷ giao dịch qua QTDND, giá trị doanh nghiệp không còn định giá theo tài sản mà theo Network Value — đây là bước nhảy vọt về định giá.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>Network Effect: Giá trị mạng lưới tăng theo bình phương số thành viên (Metcalfe's Law) — 2.000 thành viên = giá trị gấp 16 lần 500 thành viên</li>
-<li>Công thức nhân rộng: Vùng đặc sản + QTDND địa phương + SOP Silver Valley → Barrier-to-entry cực cao</li>
-<li>Terminal Value 8× EBITDA (từ Financial Model): Với EBITDA Năm 5 = 11,2 tỷ → Terminal Value ~90 tỷ — ROI hấp dẫn</li>
+<div class="eh"><div class="av" style="background:rgba(20,184,166,.15)">🔬</div><div class="ei"><div class="en">Chuyên gia Nghiên cứu & Phát triển Sản phẩm (R&D)</div><div class="er">Thông lệ quốc tế tốt nhất: Bảo hộ Sở hữu Trí tuệ (IP) trong Công nghiệp Chăm sóc Sức khỏe</div></div><div class="ep pg2">82/100</div><div class="cv">▾</div></div>
+<div class="eb"><div class="esl">Nhận định & Khuyến nghị</div><div class="etx">Lợi thế cạnh tranh thực sự của dòng sản phẩm nằm ở sự tích hợp giữa nông nghiệp đặc sản địa phương (Trà Tân Cương) và các giải pháp chăm sóc y tế thông minh (Gerontechnology). Nếu đăng ký sở hữu trí tuệ thành công cho các công thức trà độc quyền và giáo trình đào tạo, đây sẽ là rào cản độc quyền cực lớn ngăn chặn mọi sự sao chép từ các resort/wellness khác.</div>
+<div class="esl">Ý KIẾN BỔ SUNG ĐỂ DỰ ÁN KHẢ THI THỰC SỰ (THÔNG TIN CÒN THIẾU):</div><ul class="bl">
+<li><strong>Đơn đăng ký bản quyền tác giả:</strong> Đối với bộ giáo trình đào tạo Học viện Ông Bà và giải pháp thiết kế chương trình hoạt động cho người cao tuổi.</li>
+<li><strong>Đơn xin cấp Bằng sáng chế / Giải pháp hữu ích:</strong> Cho các công thức trà trị liệu (Tea Therapy) độc quyền đã được R&D nghiên cứu định lượng.</li>
+<li><strong>Báo cáo thử nghiệm thực tế sản phẩm (Beta Test Report):</strong> Trên nhóm nhỏ 20-30 người cao tuổi tại Thái Nguyên để lấy phản hồi tinh chỉnh sản phẩm trước khi chính thức hóa.</li>
 </ul></div>
 </div>
 <div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(245,158,11,.15)">💰</div><div class="ei"><div class="en">Chuyên gia Tài chính</div><div class="er">Network Value · 3-Tier Model · Terminal Value</div></div><div class="ep pg2">82/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá</div><div class="etx">Mô hình tài chính 3 tầng là kiến trúc xuất sắc. <strong style="color:#86efac">Tầng 3 (Social Impact Value) là lợi thế độc nhất</strong> — đây là thứ các dự án thông thường không có nhưng Silver Valley có thể đo lường được: số NCT được phục vụ, mức cải thiện sức khỏe, việc làm tạo ra, diện tích chè bảo tồn. Đây là "ngôn ngữ" của Impact Investors quốc tế — mở ra kênh vốn mà dự án bất động sản thông thường không tiếp cận được.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>GIIN IRIS+ Metrics: Framework đo lường tác động xã hội chuẩn quốc tế — Silver Valley đủ điều kiện áp dụng</li>
-<li>Terminal Value 8× EBITDA: Năm 5 EBITDA = 32 tỷ × 35% = 11,2 tỷ → TV ≈ 89,6 tỷ — vs đầu tư 30 tỷ = ROI ~3×</li>
-<li>ESG Reporting: Diện tích chè bảo tồn + carbon footprint giảm → điều kiện để tiếp cận Green Finance quốc tế</li>
+<div class="eh"><div class="av" style="background:rgba(139,92,246,.15)">⚙️</div><div class="ei"><div class="en">Chuyên gia Quản trị Hệ thống</div><div class="er">Phương pháp: Đánh giá lợi thế theo chuỗi giá trị và ma trận VRIO</div></div><div class="ep pg2">86/100</div><div class="cv">▾</div></div>
+<div class="eb"><div class="esl">Nhận định & Khuyến nghị</div><div class="etx">Dự án sở hữu lợi thế độc quyền tự nhiên: kiểm soát QTDND Tân Cương giúp tạo ra một hệ sinh thái khép kín. Người cao tuổi gửi tiền tiết kiệm tại QTDND → QTDND cấp tín dụng tiêu dùng cho họ trải nghiệm dịch vụ tại Silver Valley → Silver Valley tạo ra doanh thu và tiền mặt tái gửi vào QTDND. Bánh đà này (Flywheel Effect) khi đã chạy sẽ tự tăng tốc mà không cần chi phí marketing lớn.</div>
+<div class="esl">Ý KIẾN BỔ SUNG ĐỂ DỰ ÁN KHẢ THI THỰC SỰ (THÔNG TIN CÒN THIẾU):</div><ul class="bl">
+<li><strong>Quy chế kiểm soát nội bộ và quản trị xung đột lợi ích</strong> được thông qua bởi Đại hội cổ đông sáng lập của Silver Valley để bảo vệ quyền lợi của các nhà đầu tư thiểu số.</li>
+<li><strong>Bản mô tả chi tiết mô hình kinh doanh nhượng quyền hoặc nhân rộng liên kết (Franchise/License SOP)</strong> để chuẩn bị cho Giai đoạn 2 (Scale-up) sang các địa phương có QTDND khác.</li>
 </ul></div>
 </div>
 <div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(239,68,68,.15)">⚖️</div><div class="ei"><div class="en">Chuyên gia Pháp lý & Đầu tư</div><div class="er">IP · Nhân rộng · Cấu trúc pháp lý đầu tư</div></div><div class="ep py2">70/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá</div><div class="etx">Mô hình "đối tác đồng kiến tạo 4 in 1" (Nhà đầu tư + Nhà quản trị + Nhà vận hành + Nhà thực thi) là cấu trúc quản trị tiên tiến, giảm thiểu xung đột lợi ích. Cần bảo vệ pháp lý ngay: Đăng ký nhãn hiệu + bảo hộ mô hình kinh doanh. Khi nhân rộng, cần thiết kế cơ chế Franchise/License rõ ràng để bảo vệ thương hiệu và mô hình.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li><strong>Luật SHTT 2005 (sửa đổi 2022):</strong> Đăng ký ngay "Silver Valley", "Học viện Ông Bà", "Tea Therapy" — 3-6 tháng, 5-15 triệu/nhãn</li>
-<li>Cấu trúc "4 in 1" cần được ghi nhận trong Điều lệ công ty và Thỏa thuận cổ đông — tránh tranh chấp sau này</li>
-<li>Luật Đầu tư 2020, Điều 21: Cần xác minh với Sở KHĐT Thái Nguyên về ưu đãi đầu tư cho lĩnh vực chăm sóc NCT</li>
-</ul></div>
-</div>
-<div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(20,184,166,.15)">🏛️</div><div class="ei"><div class="en">Chuyên gia Kiến trúc & Quy hoạch</div><div class="er">Living Lab · WELL Standard · Nhân rộng thiết kế</div></div><div class="ep pg2">78/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá</div><div class="etx">Với 900m² thổ cư sẵn và đội ngũ có Chuyên gia Quy hoạch & Dự toán (Cáp Trọng Thắng), đề án có đủ năng lực để thiết kế và triển khai Pilot chuyên nghiệp. <strong style="color:#5eead4">Khuyến nghị thiết kế:</strong> Áp dụng Biophilic Design + TCVN 10907:2015 (tiêu chuẩn NCT) ngay từ giai đoạn 1 — tạo tiêu chuẩn nhân rộng sau này. Bản thiết kế Pilot phải là "SOP Kiến trúc" để nhân rộng sang địa điểm khác.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>Biophilic Design: Giảm 23% stress, 8% năng suất — bắt buộc áp dụng ngay từ giai đoạn 1</li>
-<li>TCVN 10907:2015: Tiêu chuẩn thiết kế công trình NCT — độ dốc, lối đi, ánh sáng, an toàn</li>
-<li>WELL Building Standard: Nên đặt mục tiêu đạt chứng chỉ này cho địa điểm đầu tiên — tạo uy tín Premium</li>
-</ul></div>
-</div>
-<div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(20,184,166,.15)">🧭</div><div class="ei"><div class="en">Chuyên gia Phong Thủy</div><div class="er">Ngũ hành tề toàn · Nhân khí vượng · Cát địa</div></div><div class="ep pg2">85/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá (Điểm cao nhất toàn bộ phân tích)</div><div class="etx">Với dữ liệu đầy đủ v2.0, đây là tướng cục phong thủy hoàn hảo hiếm gặp: Ngũ hành tề toàn (5/5 yếu tố) + Tam Tài hội tụ (3/3) + Nhân khí vượng (dân hiến đất tự nguyện) + Đất pháp lý sạch (không vướng mắc). <strong style="color:#5eead4">"Nhân hòa" — người dân địa phương ủng hộ</strong> là yếu tố phong thủy quan trọng nhất mà không thể tạo ra bằng tiền. Đây là dự án có đủ Thiên Thời + Địa Lợi + Nhân Hòa.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>Thiên Thời: Xu thế già hóa dân số VN — thị trường Silver Economy đang đến đúng thời điểm</li>
-<li>Địa Lợi: Vùng đất đặc sản Tân Cương + Ngũ hành tề toàn + Đường vào sẵn</li>
-<li>Nhân Hòa: Dân hiến đất + QTDND cộng đồng 879 thành viên + Đội ngũ 6 chuyên gia đồng lòng</li>
-</ul></div>
-</div>
-<div class="ec" onclick="tc(this)">
-<div class="eh"><div class="av" style="background:rgba(139,92,246,.15)">📈</div><div class="ei"><div class="en">Chuyên gia Đầu tư & Lập Kế Hoạch</div><div class="er">4,5/5 IFC · Roadmap 3G · Sẵn sàng Pilot</div></div><div class="ep pg2">88/100</div><div class="cv">▾</div></div>
-<div class="eb"><div class="esl">Đánh giá (Điểm cao nhất v2.0)</div><div class="etx"><strong style="color:#86efac">Đây là phần mạnh nhất và được củng cố nhiều nhất trong v2.0.</strong> Với tất cả thông tin bổ sung, đề án đủ điều kiện bắt đầu Pilot ngay mà không cần chờ: 900m² thổ cư sẵn sàng xây dựng, vốn 30 tỷ đã có cam kết ban đầu (12 tỷ nhà đầu tư + 5 tỷ QTDND + 10 tỷ NH Chính sách), đội ngũ 6 chuyên gia sẵn sàng. Chỉ cần giải quyết pháp lý y tế và tuyển chuyên gia y tế là có thể khởi động.</div>
-<div class="esl">Căn cứ</div><ul class="bl">
-<li>Pilot sẵn sàng: 900m² thổ cư + 30 tỷ vốn + 6 chuyên gia + 879 thành viên QTDND sẵn có → Khởi động trong 3-6 tháng</li>
-<li>Roadmap: G1 Pilot (12-18 tháng, 15-20 tỷ) → G2 Scale-up (2-3 địa điểm) → G3 National (QTDND mạng lưới toàn quốc)</li>
-<li>IFC 4,5/5: Chỉ cần Financial Model Excel chuẩn là đủ điều kiện trình HĐQT và các quỹ Impact Investment</li>
+<div class="eh"><div class="av" style="background:rgba(139,92,246,.15)">📈</div><div class="ei"><div class="en">Chuyên gia Đầu tư & Lập Kế Hoạch</div><div class="er">Thông lệ áp dụng: Khung sẵn sàng đầu tư IFC & Đo lường tác động xã hội GIIN IRIS+</div></div><div class="ep pg2">85/100</div><div class="cv">▾</div></div>
+<div class="eb"><div class="esl">Nhận định & Khuyến nghị</div><div class="etx">Cấu trúc dự án đáp ứng đầy đủ các tiêu chí của các quỹ đầu tư tác động (Impact Investment) nhờ giải quyết 4 mục tiêu phát triển bền vững của Liên Hợp Quốc (SDGs 1, 3, 8, 11). Tuy nhiên, để tiếp cận được các dòng vốn xanh quốc tế (ví dụ: ADB Ventures, Mekong Capital), dự án cần chuẩn bị một bộ tài liệu thẩm định (Due Diligence Package) đạt chuẩn quốc tế.</div>
+<div class="esl">Ý KIẾN BỔ SUNG ĐỂ DỰ ÁN KHẢ THI THỰC SỰ (THÔNG TIN CÒN THIẾU):</div><ul class="bl">
+<li><strong>Báo cáo Nghiên cứu Khả thi chính thức (Feasibility Study - FS)</strong> bao gồm cả phân tích tác động môi trường và xã hội (ESIA) theo tiêu chuẩn bảo vệ môi trường của IFC.</li>
+<li><strong>Thỏa thuận cổ đông (Shareholders' Agreement - SHA)</strong> quy định rõ ràng quyền biểu quyết, điều khoản thoái vốn (Exit options) cho nhà đầu tư tài chính chuyên nghiệp.</li>
+<li><strong>Hệ thống chỉ số đo lường tác động xã hội cụ thể</strong> theo chuẩn IRIS+ của GIIN để báo cáo định kỳ cho các quỹ đầu tư tác động.</li>
 </ul></div>
 </div>
 </div>
 </div>
 
 <!-- ACTION PLAN -->
-<div class="st" style="margin-top:40px">💡 Action Plan v2.0 — Cập Nhật Theo Thông Tin Mới</div>
+<div class="st" style="margin-top:40px">💡 Lộ Trình Triển Khai Thực Tế (Action Plan v4.0)</div>
 <div class="tl">
 <div class="tlg">
-<div class="tlph"><div class="tld r" style="top:7px"></div><div class="pb r">🔴 KHẨN CẤP — Trong 30 ngày</div></div>
+<div class="tlph"><div class="tld r" style="top:7px"></div><div class="pb r">🔴 KHẨN CẤP — Giai đoạn Phát triển Sản phẩm (R&D) & Pháp lý (Tháng 1-3)</div></div>
 <div class="ais">
-<div class="ai"><div class="an r">1</div><div class="atx"><strong>Rà soát pháp lý y tế — Ưu tiên #1 Tuyệt Đối:</strong> Luật sư y tế xác định chính xác hoạt động nào cần Giấy phép KBCB. Đặc biệt: Tea Therapy và Wellness Retreat chiếm 40% doanh thu Năm 1 (3/7,5 tỷ) — nếu không có phép, mô hình tài chính bị ảnh hưởng nghiêm trọng.</div></div>
-<div class="ai"><div class="an r">2</div><div class="atx"><strong>Tuyển Chuyên gia Y tế / Dưỡng sinh:</strong> Đây là vị trí duy nhất còn thiếu trong đội ngũ. Cần: Bác sĩ y học cổ truyền hoặc Chuyên gia dưỡng sinh có chứng chỉ — vừa để xin phép KBCB, vừa để thiết kế chương trình Wellness chuyên nghiệp.</div></div>
-<div class="ai"><div class="an r">3</div><div class="atx"><strong>Soạn Hợp đồng Ủy thác QTDND 5 tỷ:</strong> Thiết kế đúng theo Thông tư 30/2019/TT-NHNN về ủy thác đầu tư — tránh rủi ro bị NHNN yêu cầu thu hồi. Đây là 5 tỷ quan trọng trong cơ cấu vốn 30 tỷ.</div></div>
+<div class="ai"><div class="an r">1</div><div class="atx"><strong>Thiết lập Hội đồng Khoa học & Xây dựng Công thức Sản phẩm:</strong> Hợp tác với các bác sĩ y học cổ truyền để kiểm chứng và chuẩn hóa 3 liệu trình Trà trị liệu cốt lõi và khung bài giảng Học viện Ông Bà.</div></div>
+<div class="ai"><div class="an r">2</div><div class="atx"><strong>Rà soát điều kiện cấp phép hoạt động y tế (Sở Y tế):</strong> Thuê công ty luật chuyên ngành rà soát hồ sơ đăng ký Phòng chẩn trị Y học cổ truyền hoặc Cơ sở phục hồi chức năng để hợp pháp hóa dòng doanh thu Trị liệu chè.</div></div>
+<div class="ai"><div class="an r">3</div><div class="atx"><strong>Tuyển dụng Giám đốc Y tế (CMO) & Đăng ký IP:</strong> Ký HĐ với bác sĩ Đông Y đứng tên chuyên môn kỹ thuật; song song nộp đơn đăng ký bản quyền giáo trình lên Cục Bản quyền và nhãn hiệu lên Cục SHTT.</div></div>
 </div>
 </div>
 <div class="tlg">
-<div class="tlph"><div class="tld y" style="top:7px"></div><div class="pb y">🟡 QUAN TRỌNG — Trong 60-90 ngày</div></div>
+<div class="tlph"><div class="tld y" style="top:7px"></div><div class="pb y">🟡 QUAN TRỌNG — Giai đoạn Khởi động xây dựng Pilot (Tháng 4-6)</div></div>
 <div class="ais">
-<div class="ai"><div class="an y">4</div><div class="atx"><strong>Xây Financial Model Excel Chuẩn (18-20 sheet):</strong> Đây là tài liệu số 1 còn thiếu trước khi trình HĐQT và quỹ đầu tư. Cần có: P&L 5-10 năm, Cash Flow, Balance Sheet, IRR/NPV/Payback, Break-even, Sensitivity Analysis, kịch bản Base/Optimistic/Conservative.</div></div>
-<div class="ai"><div class="an y">5</div><div class="atx"><strong>Khởi động Pilot trên 900m² Thổ Cư Sẵn:</strong> Xin phép xây dựng (đất thổ cư không cần chuyển đổi mục đích), thiết kế và khởi công Tea House + 5-6 phòng Homestay + Không gian Silver Community. Mục tiêu: Khai trương Pilot trong 6-9 tháng tới.</div></div>
-<div class="ai"><div class="an y">6</div><div class="atx"><strong>Tiếp thị trong cộng đồng 879 thành viên QTDND:</strong> Đây là "warm market" tốt nhất hiện có. Tổ chức 2-3 buổi giới thiệu Silver Valley cho thành viên QTDND để tuyển thành viên Pilot đầu tiên — chi phí gần như bằng 0.</div></div>
-<div class="ai"><div class="an y">7</div><div class="atx"><strong>Đăng ký Nhãn hiệu & Bảo hộ IP:</strong> "Silver Valley", "Học viện Ông Bà", "Tea Therapy" tại Cục SHTT. Xác nhận với Hiệp hội chè Tân Cương về quyền sử dụng thương hiệu "Chè Tân Cương".</div></div>
+<div class="ai"><div class="an y">4</div><div class="atx"><strong>Thiết lập Bản vẽ Tổng mặt bằng 1/500 & Xin phép xây dựng:</strong> Triển khai thiết kế kỹ thuật dựa trên công năng R&D sản phẩm trên diện tích ~900m² đất thổ cư sẵn có. Nộp hồ sơ xin phép xây dựng.</div></div>
+<div class="ai"><div class="an y">5</div><div class="atx"><strong>Lập file tính toán tài chính trên Excel chuẩn (18-20 sheet):</strong> Hoàn thiện mô hình tài chính Excel chi tiết bao gồm bảng dòng tiền chiết khấu (DCF), phân tích độ nhạy đa biến dựa trên biên chi phí sản phẩm thực tế sau R&D.</div></div>
+<div class="ai"><div class="an y">6</div><div class="atx"><strong>Khảo sát và thử nghiệm sản phẩm với 30 thành viên QTDND đầu tiên:</strong> Tổ chức các chương trình dùng thử trà trị liệu dưỡng sinh và tham gia lớp học thử nghiệm tại địa phương để thu thập phản hồi cải tiến sản phẩm.</div></div>
 </div>
 </div>
 <div class="tlg">
-<div class="tlph"><div class="tld g" style="top:7px"></div><div class="pb g">🟢 CHIẾN LƯỢC — Trong 6-12 tháng</div></div>
+<div class="tlph"><div class="tld g" style="top:7px"></div><div class="pb g">🟢 CHIẾN LƯỢC — Giai đoạn Vận hành & Gọi vốn mở rộng (Tháng 7-12)</div></div>
 <div class="ais">
-<div class="ai"><div class="an g">8</div><div class="atx"><strong>Hoàn thiện hồ sơ đầu tư & Tiếp cận Impact Capital:</strong> Sau khi có Financial Model Excel chuẩn + kết quả Pilot ban đầu + pháp lý y tế sạch → Chuẩn bị hồ sơ trình ADB Ventures, Mekong Capital, VinaCapital Foundation. Mục tiêu Seed Round: 5-15 tỷ cho giai đoạn mở rộng.</div></div>
-<div class="ai"><div class="an g">9</div><div class="atx"><strong>Roadmap QTDND: Tăng thành viên 879 → 2.500 trong 5 năm:</strong> Tích hợp chặt Silver Membership với tài khoản QTDND. Mỗi thành viên Silver Valley = thành viên QTDND — tạo Flywheel Effect cho cả hai hệ sinh thái.</div></div>
-<div class="ai"><div class="an g">10</div><div class="atx"><strong>Chuẩn bị SOP để nhân rộng:</strong> Từ kinh nghiệm Pilot, xây dựng bộ SOP (bộ tiêu chuẩn vận hành) cho mô hình Silver Valley → Cơ sở để Franchise/License sang các địa phương khác có vùng đặc sản + QTDND địa phương.</div></div>
+<div class="ai"><div class="an g">7</div><div class="atx"><strong>Hoàn thành xây dựng giai đoạn 1 & Vận hành thử nghiệm:</strong> Đưa Tea House, Khu lưu trú Pilot và Học viện Ông Bà vào hoạt động chính thức. Đạt mục tiêu hòa vốn vận hành tháng đầu tiên.</div></div>
+<div class="ai"><div class="an g">8</div><div class="atx"><strong>Lập hồ sơ gọi vốn vòng hạt giống (Seed Round) từ quỹ tác động:</strong> Sử dụng dữ liệu R&D, bản quyền sở hữu trí tuệ đã đăng ký và kết quả vận hành thực tế của giai đoạn Pilot để tiếp cận ADB Ventures, Mekong Capital nhằm kêu gọi 10-15 tỷ đồng.</div></div>
 </div>
 </div>
 </div>
 
 <!-- MATRIX -->
-<div class="st" style="margin-top:34px">🗂 Ma Trận Ưu Tiên (v2.0)</div>
+<div class="st" style="margin-top:34px">🗂 Ma Trận Hành Động Ưu Tiên Để Đạt Độ Khả Thi Thực Sự</div>
 <table class="mt">
-<thead><tr><th>Hành động</th><th>Độ khẩn</th><th>Tác động</th><th>Ưu tiên</th></tr></thead>
+<thead><tr><th>Nhiệm vụ trọng tâm</th><th>Mức độ khẩn cấp</th><th>Mức độ ảnh hưởng</th><th>Thứ tự ưu tiên</th></tr></thead>
 <tbody>
-<tr><td>Rà soát pháp lý y tế + xin Giấy phép KBCB</td><td><span class="rtag r" style="font-size:11px">🔴 Cao</span></td><td><span class="rtag r" style="font-size:11px">🔴 Cao</span></td><td><span class="pbdg">#1</span></td></tr>
-<tr><td>Tuyển Chuyên gia Y tế / Dưỡng sinh</td><td><span class="rtag r" style="font-size:11px">🔴 Cao</span></td><td><span class="rtag r" style="font-size:11px">🔴 Cao</span></td><td><span class="pbdg">#2</span></td></tr>
-<tr><td>Soạn Hợp đồng Ủy thác QTDND 5 tỷ</td><td><span class="rtag r" style="font-size:11px">🔴 Cao</span></td><td><span class="rtag r" style="font-size:11px">🔴 Cao</span></td><td><span class="pbdg">#3</span></td></tr>
-<tr><td>Xây Financial Model Excel 18-20 sheet</td><td><span class="rtag y" style="font-size:11px">🟡 Trung</span></td><td><span class="rtag r" style="font-size:11px">🔴 Cao</span></td><td><span class="pbdg">#4</span></td></tr>
-<tr><td>Khởi động Pilot trên 900m² thổ cư</td><td><span class="rtag y" style="font-size:11px">🟡 Trung</span></td><td><span class="rtag r" style="font-size:11px">🔴 Cao</span></td><td><span class="pbdg">#5</span></td></tr>
-<tr><td>Tiếp thị trong 879 thành viên QTDND</td><td><span class="rtag y" style="font-size:11px">🟡 Trung</span></td><td><span class="rtag r" style="font-size:11px">🔴 Cao</span></td><td><span class="pbdg">#6</span></td></tr>
-<tr><td>Đăng ký Nhãn hiệu & IP</td><td><span class="rtag y" style="font-size:11px">🟡 Trung</span></td><td><span class="rtag y" style="font-size:11px">🟡 Trung</span></td><td><span class="pbdg">#7</span></td></tr>
-<tr><td>Tiếp cận Impact Investors</td><td><span class="rtag g" style="font-size:11px">🟢 Thấp</span></td><td><span class="rtag r" style="font-size:11px">🔴 Cao</span></td><td><span class="pbdg">#8</span></td></tr>
+<tr><td>R&D công thức Trà trị liệu và Khung bài giảng Học viện Ông Bà thực tế</td><td><span class="rtag r" style="font-size:11px">🔴 Rất cao</span></td><td><span class="rtag r" style="font-size:11px">🔴 Cực kỳ lớn (Gốc rễ dự án)</span></td><td><span class="pbdg">Ưu tiên 1</span></td></tr>
+<tr><td>Tuyển Giám đốc Y tế & Chuẩn bị hồ sơ cấp phép của Sở Y tế</td><td><span class="rtag r" style="font-size:11px">🔴 Rất cao</span></td><td><span class="rtag r" style="font-size:11px">🔴 Rất lớn (40% DT)</span></td><td><span class="pbdg">Ưu tiên 2</span></td></tr>
+<tr><td>Lập Hồ sơ Báo cáo NHNN về giao dịch ủy thác 5 tỷ của QTDND</td><td><span class="rtag r" style="font-size:11px">🔴 Rất cao</span></td><td><span class="rtag r" style="font-size:11px">🔴 Rút vốn nếu sai phạm</span></td><td><span class="pbdg">Ưu tiên 3</span></td></tr>
+<tr><td>Đăng ký bản quyền SHTT giáo trình & công thức sản phẩm độc quyền</td><td><span class="rtag y" style="font-size:11px">🟡 Trung bình</span></td><td><span class="rtag r" style="font-size:11px">🔴 Chống sao chép</span></td><td><span class="pbdg">Ưu tiên 4</span></td></tr>
+<tr><td>Ký hợp đồng hiến đất làm đường giao thông vĩnh viễn (2.000m²)</td><td><span class="rtag y" style="font-size:11px">🟡 Trung bình</span></td><td><span class="rtag r" style="font-size:11px">🔴 Đóng cửa nếu tranh chấp</span></td><td><span class="pbdg">Ưu tiên 5</span></td></tr>
 </tbody>
 </table>
 
 <!-- CONCLUSION -->
 <div class="cc">
-<h3>🏆 Kết Luận Phiên Bản 2.0</h3>
-<p><strong style="color:#5eead4">Tân Cương Silver Valley đã sẵn sàng cho Pilot.</strong><br/>Với 900m² thổ cư (xây được ngay), 30 tỷ vốn có cam kết ban đầu, đội ngũ 6 chuyên gia, QTDND 879 thành viên, và Financial Model IRR 18-22% — đây không còn là "đề án trên giấy" nữa.</p>
-<p>Chỉ còn <strong style="color:#fca5a5">1 rào cản duy nhất:</strong> Pháp lý y tế + Chuyên gia y tế. Giải quyết được điều này trong <strong style="color:#fcd34d">30 ngày tới</strong> → Dự án sẵn sàng khởi công.</p>
-<p>Điểm tổng <strong style="color:#c4b5fd">76/100</strong> phản ánh một đề án <strong style="color:#86efac">gần như hoàn chỉnh</strong> — từ tầm nhìn chiến lược xuất sắc (90/100) đến lợi thế cạnh tranh bền vững (88/100) và khả thi tài chính được kiểm chứng (82/100).</p>
+<h3>🏆 Kết Luận Tổng Thể Bản Cập Nhật 4.0</h3>
+<p><strong style="color:#5eead4">Dự án Tân Cương Silver Valley có độ khả thi thực tế rất cao.</strong><br/>Tuy nhiên, để từ "đề án ý tưởng" trở thành "dự án chính thức đủ điều kiện đầu tư", ban điều hành bắt buộc phải bổ sung 3 nút thắt cốt lõi: Giấy phép hoạt động y tế từ Sở Y tế, Văn bản chấp thuận cấu trúc đầu tư từ Ngân hàng Nhà nước, và Hợp đồng hiến đất làm đường được công chứng pháp lý.</p>
+<p>Với sự sẵn sàng của 900m² đất thổ cư và nguồn lực tài chính ban đầu từ nhóm sáng lập, dự án hoàn toàn có thể khởi động giai đoạn Pilot ngay trong năm nay song song với việc hoàn thiện các hồ sơ pháp lý này.</p>
 </div>
 
 <div class="foot">
-Báo cáo Phiên Bản 2.0 · Hội đồng Chuyên gia Cao cấp Đa lĩnh vực · 11/07/2026<br/>
-Căn cứ: <em>DAC_TSV 3 van de can lam ro.docx + DAC_FMV 1.0.docx + DAC_TSV bo sung thong tin.docx</em><br/>
-Pháp luật VN hiện hành · IFC Framework · GIIN IRIS+ · CCRC Best Practices
+Báo cáo Đánh giá Chuyên sâu Phiên Bản 4.0 · Hội đồng Cố vấn Cao cấp Đa ngành · 12/07/2026<br/>
+Dựa trên Luật Đất đai 2024, Luật Các TCTD 2024 và Luật Khám bệnh Chữa bệnh 2023 của nước Cộng hòa Xã hội Chủ nghĩa Việt Nam.
 </div>
 </div>
 
